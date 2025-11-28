@@ -10,9 +10,9 @@ format:
     css: custom.css
 ---
 
-<div style="text-align:right; font-size:0.9rem; margin-top:-0.5rem;">
+::: {style="text-align:right; font-size:0.9rem; margin-top:-0.5rem;"}
 🌐 English version: <a href="/posts/11272025_hawaii_trip/index_en.html">Hawaii Trip Travelogue</a>
-</div>
+:::
 
 感恩节前夕和六六一起错峰去了夏威夷，在欧胡岛和大岛度过了愉快的8天7晚。照片固然能捕捉精彩瞬间，但希望能借助文字的力量封存一些细节，记录一些感悟，于是写下这篇游记 (liu shui zhang)。
 
