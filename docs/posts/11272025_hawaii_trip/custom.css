@@ -1,0 +1,8 @@
+/* Make all images larger and centered */
+img {
+  width: 80%;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
