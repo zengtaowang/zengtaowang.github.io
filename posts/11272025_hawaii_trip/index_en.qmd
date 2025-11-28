@@ -15,7 +15,7 @@ We took advantage of the Thanksgiving week to fly (slightly off‑peak) to Hawai
 
 ## Day 1 – Arrival in Honolulu
 
-Up at 4 AM, rideshare to the airport, IND → Houston → Honolulu after ~8 hours in the air. We landed around 2 PM local time—sunny, warm, gentle trade wind.
+Up at 4 AM, rideshare to the airport, IND → Houston → Honolulu after \~8 hours in the air. We landed around 2 PM local time—sunny, warm, gentle trade wind.
 
 ![Sign at Honolulu Airport restroom](images/HNL_sign.jpg)
 
@@ -24,7 +24,7 @@ Traffic was heavy driving toward Waikīkī. At first the neighborhoods were low,
 Ala Moana Shopping Center was our first stop—the islands' flagship mall with luxury brands. Hawaiʻi is not only a vacation paradise; its overall effective tax burden on purchases is lower than most US states, making shopping attractive. We found a birthday gift for Liuliu and caught a brief Polynesian‑style stage performance—dancers with characteristic sun‑kissed Pacific Islander features, warm music, a festive welcome.
 
 ::: {.callout-note title="GET vs Sales Tax"}
-Hawaiʻi does not levy a conventional retail “sales tax.” Instead it charges a General Excise Tax (GET) on almost all business activity (goods, services, rentals). Base rate: 4%. Honolulu (Oʻahu) adds a 0.5% county surcharge → 4.5% effective. This is well below the ~7.5%–7.7% average combined sales tax in many US locales.
+Hawaiʻi does not levy a conventional retail “sales tax.” Instead it charges a General Excise Tax (GET) on almost all business activity (goods, services, rentals). Base rate: 4%. Honolulu (Oʻahu) adds a 0.5% county surcharge → 4.5% effective. This is well below the \~7.5%–7.7% average combined sales tax in many US locales.
 :::
 
 Dinner (as proud Sichuan/Chongqing people) had to be at a Sichuan restaurant: Chengdu Taste. The famous cold skewers dish looked great but tasted average—similar to a DIY seasoning packet. Surprisingly, a simple stir‑fried cabbage was the highlight—clean, crunchy, addictive.
@@ -41,15 +41,13 @@ After hotel breakfast we hiked Diamond Head. From the summit: the layered Waikī
 
 We drove to the North Shore for the “famous” shrimp plates—overrated: mushy rice, oily sauce, lackluster setting. Afternoon surf was rough under gray skies; powerful break reminding us of ocean force. Birthday omakase dinner: 15 courses, stellar uni and caviar. Another guest also had a birthday—candlelit sushi roll and a shared song closed the evening.
 
-![Cloudy waves](images/cloudy_wave.JPG)
-![Omakase sushi](images/omakase_sushi.JPG)
+![Cloudy waves](images/cloudy_wave.JPG) ![Omakase sushi](images/omakase_sushi.JPG)
 
 ## Day 3 – Koko Crater & Kualoa Ranch
 
 Morning: Koko Crater Railway Trail—1174 old military railroad tie steps, steep and relentless. Families with infants, determined elders, and ultra‑fit repeat climbers all shared the slope. At the top: Hanauma Bay’s curved “dinosaur” silhouette.
 
-![Hanauma Bay from Koko Crater](images/koko_crater_2.JPG)
-![Steep Koko Crater steps](images/koko_crater_1.JPG)
+![Hanauma Bay from Koko Crater](images/koko_crater_2.JPG) ![Steep Koko Crater steps](images/koko_crater_1.JPG)
 
 ::: {.callout-note title="Name Hanauma"}
 Hana = bay / entrance; Uma = nose ridge / curved shape.
@@ -57,8 +55,7 @@ Hana = bay / entrance; Uma = nose ridge / curved shape.
 
 Afternoon: Kualoa Ranch ziplining (last visit I did ATV). Seven lines across dramatic, film‑famous valleys (Jurassic World among them). Longest line: lighter riders must tuck knees to reduce drag; staff “launch” you energetically—nicknamed a “tumble coconut.” Exhilarating swings, echoing shouts; freedom distilled.
 
-![Kualoa Ranch valley](images/kuoloa_ranch.JPG)
-![Zipline at Kualoa Ranch](images/kualoa_ranch_zipline.jpg)
+![Kualoa Ranch valley](images/kuoloa_ranch.JPG) ![Zipline at Kualoa Ranch](images/kualoa_ranch_zipline.jpg)
 
 ## Day 4 – Hanauma Bay Snorkeling & Flight to Big Island
 
@@ -80,9 +77,7 @@ In deeper water we mustn’t stand—crew emphasized safety. Clearer water, more
 
 Afternoon beach walks; lazily sunning sea turtles completed the day—marine life bounty.
 
-![Sea turtle 1](images/turtle_1.JPG)
-![Sea turtle 2](images/turtle_2.JPG)
-![Sea turtle 3](images/turtle_3.JPG)
+![Sea turtle 1](images/turtle_1.JPG) ![Sea turtle 2](images/turtle_2.JPG) ![Sea turtle 3](images/turtle_3.JPG)
 
 ## Day 6 – Volcanoes National Park
 
@@ -96,8 +91,7 @@ Ka Lae marks the geographically southernmost point of US territory—windswept, 
 
 Crater rim hike: vast ash‑gray bowl, sterile, stripped, a freeze‑frame of past lava fury; a vent still exhaling white fume. A rain forest segment and a lava tube later—green abundance beside barren flows—ecological contrast sharpened. Down on the crater floor, seedlings push through cracks, foreshadowing future forest—or its next incineration. Cycles of destruction and renewal.
 
-![Crater overlook](images/crater.JPG)
-![Crater surface close](images/crater_surface.JPG)
+![Crater overlook](images/crater.JPG) ![Crater surface close](images/crater_surface.JPG)
 
 Cold evening at the overlook—no visible lava that night; we left slightly disappointed.
 
@@ -109,25 +103,26 @@ Recovery day: leisurely northward coastal drive from Kona, stopping at beaches a
 
 Pololū Valley hike: descent to a black sand beach; misty valley behind, layered seaside cliffs ahead; cattle grazing distantly like a pastoral painting.
 
-![Pololū cliffs](images/pololu_valley.JPG)
-![Pololū valley cattle](images/pololu_valley_2.JPG)
+![Pololū cliffs](images/pololu_valley.JPG) ![Pololū valley cattle](images/pololu_valley_2.JPG)
 
 At 4 PM we learned the volcano was erupting—abandoned sunset/observatory plan and sprinted back (one fuel stop). Red glow appeared before arrival—adrenaline spike. At the overlook: molten lava fountaining from yesterday’s steaming vent; main flow slowing, forming a golden ribbon with fiery vein patterns feeding branch fissures. Cracks glowed like a night aerial view of a lit city.
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ## Sky
+
 ![Eruption sky glow](images/volcano_sky.JPG)
 
 ## Dancer
+
 ![Performer near eruption](images/volcano_dancer.JPG)
 
 ## Panorama
+
 ![Full eruption panorama](images/volcano_full.JPG)
 
 ## Lava
-![Closer lava detail](images/volcano_partial.JPG)
 
+![Closer lava detail](images/volcano_partial.JPG)
 :::
 
 Heat pulses, sulfur scent, intermittent low rumbling—multisensory awe. The eruption lasted 9 hours; that night felt the island was illuminated, everything reverent before deep Earth energy.
@@ -140,10 +135,8 @@ Kīlauea is among the world’s most active volcanoes. Frequent effusive eruptio
 
 Last morning: Outrigger Resort activities included a farmer’s market—fresh produce and handmade crafts. Leisurely ocean‑side breakfast, then to KOA. Kona Airport is minimal—open‑air, breezy; among the lowest‑maintenance international airports you’ll see.
 
-![Ube cold brew coffee by the shore](images/Ube_coffee.jpg)
-![Kona Airport](images/Kona_airport.jpg)
-![Hawaiian Airlines plane](images/hawaii_airlines.jpg)
+![Ube cold brew coffee by the shore](images/Ube_coffee.jpg) ![Kona Airport](images/Kona_airport.jpg) ![Hawaiian Airlines plane](images/hawaii_airlines.jpg)
 
----
+------------------------------------------------------------------------
 
 Eight days passed quickly: sun & sand relaxation vs hiking fatigue; eruption awe vs missed cloud‑sea sunsets; marine life joy vs underwhelming meals. Travel blends delight and imperfection into memory—we carry both, and the gaps make us look forward to the next journey.
