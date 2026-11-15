@@ -22,7 +22,7 @@ format:
 lang: en-US
 ---
 
-Indianapolis, Indiana  |  651-424-6529  |  [zengtao.wang@lilly.com](mailto:zengtao.wang@lilly.com)  |  [LinkedIn](https://www.linkedin.com/in/zengtao-wang)  |  [Google Scholar](https://scholar.google.com/citations?hl=en&user=4mJXDH4AAAAJ)  |  [GitHub](https://github.com/zengtaowang)  |  [Personal website](https://zengtaowang.github.io)
+Indianapolis, Indiana  |  651-424-6529  |  [zntao.wang@gmail.com](mailto:zntao.wang@gmail.com)  |  [LinkedIn](https://www.linkedin.com/in/zengtao-wang)  |  [Google Scholar](https://scholar.google.com/citations?hl=en&user=4mJXDH4AAAAJ)  |  [GitHub](https://github.com/zengtaowang)  |  [Personal website](https://zengtaowang.github.io)
 
 ## PROFESSIONAL PROFILE
 

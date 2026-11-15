@@ -13,7 +13,7 @@ about:
     - text: Google Scholar
       href: https://scholar.google.com/citations?user=4mJXDH4AAAAJ&hl=en
     - text: Email
-      href: zengtao.wang@lilly.com
+      href: mailto:zntao.wang@gmail.com
 ---
 
 ::: {#hero-heading}
