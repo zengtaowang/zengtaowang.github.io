@@ -1,52 +1,87 @@
 [
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "Personal.html",
+    "href": "Personal.html",
+    "title": "Personal Life",
     "section": "",
-    "text": "Advisor-Pharmacometrician, Eli Lilly and Company (Jun 2024 - Present)\nGlobal PK/PD/PMx department\nSupervisor: Dr. Nieves Velez de Mendizabal\nMy current research at Eli Lilly and Company focuses on the development and application of quantitative pharmacology and pharmacometrics to support drug development in metabolic and neuroscience therapeutic areas."
+    "text": "Where it all began—surrounded by mountains and river valleys.\n\n\n\n2-year-old ME\n\n\n\n\n\n\nA young teenager stepping into a bustling city full of possibilities.\n\n\n\n\nDiving into science and shaping dreams.\n\n\n\n\nA proud moment marking my first contribution to science.\n\n\n\n\nA leap of faith and a heart full of hope.\n\n\n\nSJTU Class of 2019\n\n\n\n\n\n\nTurning knowledge into real-world impact.\n\n\n\nInternship at Biogen\n\n\n\n\n\n\nYears of hard work paid off—hello Dr. Me!\n\n\n\nPhD Graduation\n\n\n\n\n\n\nBuilding a future together, full of love and shared dreams.\n\n\n\nWedding & home"
   },
   {
-    "objectID": "research.html#pharmacometrics-in-metablolic-and-neuroscience-therapeutic-areas",
-    "href": "research.html#pharmacometrics-in-metablolic-and-neuroscience-therapeutic-areas",
-    "title": "Research",
+    "objectID": "Personal.html#big-milestones",
+    "href": "Personal.html#big-milestones",
+    "title": "Personal Life",
     "section": "",
-    "text": "Advisor-Pharmacometrician, Eli Lilly and Company (Jun 2024 - Present)\nGlobal PK/PD/PMx department\nSupervisor: Dr. Nieves Velez de Mendizabal\nMy current research at Eli Lilly and Company focuses on the development and application of quantitative pharmacology and pharmacometrics to support drug development in metabolic and neuroscience therapeutic areas."
+    "text": "Where it all began—surrounded by mountains and river valleys.\n\n\n\n2-year-old ME\n\n\n\n\n\n\nA young teenager stepping into a bustling city full of possibilities.\n\n\n\n\nDiving into science and shaping dreams.\n\n\n\n\nA proud moment marking my first contribution to science.\n\n\n\n\nA leap of faith and a heart full of hope.\n\n\n\nSJTU Class of 2019\n\n\n\n\n\n\nTurning knowledge into real-world impact.\n\n\n\nInternship at Biogen\n\n\n\n\n\n\nYears of hard work paid off—hello Dr. Me!\n\n\n\nPhD Graduation\n\n\n\n\n\n\nBuilding a future together, full of love and shared dreams.\n\n\n\nWedding & home"
   },
   {
-    "objectID": "research.html#alzheimers-disease-type-2-diabetes-blood-brain-barrier-dysfunction",
-    "href": "research.html#alzheimers-disease-type-2-diabetes-blood-brain-barrier-dysfunction",
-    "title": "Research",
-    "section": "🧠 Alzheimer’s Disease & Type 2 Diabetes & Blood-Brain Barrier Dysfunction",
-    "text": "🧠 Alzheimer’s Disease & Type 2 Diabetes & Blood-Brain Barrier Dysfunction\nGraduate Research Assistant, University of Minnesota (Nov 2019 – May 2024)\nDepartment of Pharmaceutics\nAdvisor: Dr. Karunya K. Kandimalla\nMy dissertation research focused on understanding how amyloid-beta (Aβ) peptides and insulin resistance contribute to cerebrovascular dysfunction in Alzheimer’s disease, with a special emphasis on the blood-brain barrier (BBB). Key accomplishments include:\n\n📊 Developed a population pharmacokinetic model to study Aβ isoform trafficking and accumulation at the BBB endothelium.\nPublished in Molecular Pharmaceutics\n\n\n\n\nAβ PK model\n\n\n\n🔬 Conducted flow cytometry, western blot, and confocal imaging to investigate distinct molecular mechanisms of Aβ uptake and intracellular trafficking in BBB endothelial cells.\nPublished in Molecular Pharmacology\n🧠 Established a compartmental PK model to deconvolve plasma kinetics of imaging tracers from dynamic SPECT/CT heart scans.\nPublished in Journal of Pharmacology and Experimental Therapeutics\n\n\n\n\nDeconvoltution of plasma PK from heart imaging\n\n\n\n🧪 Studied the effect of HDL mimetic peptides and gut microbiome metabolites on Aβ accumulation using dynamic imaging and cellular assays.\nPublished in Molecular Pharmaceutics\n\n\n\n\n4F effect on Amyloid beta PK\n\n\n\n🧬 Interpreted time-series transcriptomics of insulin-exposed BBB endothelial cells and co-authored the manuscript.\nPublished in NPJ Systems Biology and Applications\n🔁 Built a quantitative systems pharmacology (QSP) model to simulate insulin signaling and VCAM1 expression in BBB endothelial cells. Integrated proteomics and transcriptomics to study vascular inflammation in Alzheimer’s disease.\nPublished in CPT: Pharmacometrics & Systems Pharmacology\n\n\n\n\nQSP model"
+    "objectID": "Personal.html#about-me-outside-the-lab",
+    "href": "Personal.html#about-me-outside-the-lab",
+    "title": "Personal Life",
+    "section": "👋 About Me Outside the Lab",
+    "text": "👋 About Me Outside the Lab\nWhen I’m not modeling pharmacokinetics or optimizing drug development pipelines, I enjoy a variety of activities that help me stay grounded, creative, and connected."
   },
   {
-    "objectID": "research.html#modeling-neurodegenerative-disease-progression",
-    "href": "research.html#modeling-neurodegenerative-disease-progression",
-    "title": "Research",
-    "section": "🧬 Modeling Neurodegenerative Disease Progression",
-    "text": "🧬 Modeling Neurodegenerative Disease Progression\nModeling & Simulation Co-op, Biogen Inc. (Jan – Jun 2023)\nClinical Pharmacology and Pharmacometrics\nSupervisor: Dr. Jingxian (JC) Chen\n\n📈 Conducted model-based meta-analysis (MBMA) of MDS-UPDRS data to support early Parkinson’s disease (PD) trial design.\n🧮 Built nonlinear mixed-effect models (in NONMEM and Monolix) to describe disease progression and time-to-event outcomes.\n📊 Simulated longitudinal endpoint profiles to evaluate study designs and dosing strategies.\n🗣️ Presented modeling results and impact to internal project teams and stakeholders.\nPresented at ACoP14\n🧪 Developed a PK/PD model for antisense oligonucleotide (ASO) therapy in PD and simulated alternate regimens to inform dose optimization.\n\n\n\n\nPD disease progression model VPC"
+    "objectID": "Personal.html#hobbies-interests",
+    "href": "Personal.html#hobbies-interests",
+    "title": "Personal Life",
+    "section": "🌱 Hobbies & Interests",
+    "text": "🌱 Hobbies & Interests\n\nGardening — I find peace and joy in growing herbs and vegetables, especially during spring and summer. Watching something grow over time reminds me of both science and patience.\nCooking — Experimenting with new recipes is one of my favorite creative outlets. I enjoy cooking traditional Chinese dishes and trying global cuisines.\nTennis & Table Tennis — Great ways to stay active and have fun with friends and family.\nMahjong — I love playing mahjong with friends — it’s strategic, social, and always entertaining."
   },
   {
-    "objectID": "research.html#imaging-probe-development-for-cancer-detection",
-    "href": "research.html#imaging-probe-development-for-cancer-detection",
-    "title": "Research",
-    "section": "🧪 Imaging Probe Development for Cancer Detection",
-    "text": "🧪 Imaging Probe Development for Cancer Detection\nUndergraduate Research Assistant, Shanghai Jiao Tong University (Oct 2016 – Jun 2019)\nCollege of Pharmacy\nAdvisor: Dr. Qingqing Meng\n\n🧫 Designed and synthesized bimodal NIR and PET imaging probes targeting CYP1B1 for early tumor detection.\n🔬 Evaluated binding affinity and selectivity in CYP1B1-overexpressing cancer cell lines using flow cytometry and confocal imaging.\n🧠 Performed in vivo/ex vivo biodistribution and tumor visualization imaging.\nPublished in J. Med. Chem. and ChemBioChem."
+    "objectID": "Personal.html#travel-nature",
+    "href": "Personal.html#travel-nature",
+    "title": "Personal Life",
+    "section": "🌄 Travel & Nature",
+    "text": "🌄 Travel & Nature\nI’ve had the pleasure of visiting several breathtaking places, including:\n\n🏞 Olympic National Park\n\n\n\n🏞 Great Smoky National Park\n\n\n\n🏜️ Death Valley National Park\n\n\n\n🏝 Shenandoah national park\n\n\n\n🏞️ Yellowstone National Park\n\n\n\n🏔️ Grand Teton National Park\n\n\n\n🍁 Banff National Park\n\n\n\n🏞 Yunnan, China\n\n\nI love spending time in nature — hiking, exploring, and soaking in the peace of the outdoors."
   },
   {
-    "objectID": "research.html#bbb-drug-delivery-for-alzheimers-therapy",
-    "href": "research.html#bbb-drug-delivery-for-alzheimers-therapy",
-    "title": "Research",
-    "section": "🧪 BBB Drug Delivery for Alzheimer’s Therapy",
-    "text": "🧪 BBB Drug Delivery for Alzheimer’s Therapy\nSummer Research Intern, University of Tokyo / iCONM (Summer 2018)\nSupervisor: Dr. Kazunori Kataoka\n\n🧪 Prepared PEGylated anti-Aβ antibodies and characterized them with GPC and DLS.\n🧠 Assessed brain delivery and pharmacokinetics of modified antibodies to improve BBB penetration in Alzheimer’s disease."
+    "objectID": "Personal.html#life-in-indiana",
+    "href": "Personal.html#life-in-indiana",
+    "title": "Personal Life",
+    "section": "🏠 Life in Indiana",
+    "text": "🏠 Life in Indiana\nI currently live in the Greater Indianapolis area, where Lu and I recently bought our first home 🏡. It’s been a wonderful journey turning a house into a home, and we’re excited for what the future holds here."
   },
   {
-    "objectID": "research.html#related-publications",
-    "href": "research.html#related-publications",
-    "title": "Research",
-    "section": "🔗 Related Publications",
-    "text": "🔗 Related Publications\n\n📂 See full list on Google Scholar"
+    "objectID": "Personal.html#family",
+    "href": "Personal.html#family",
+    "title": "Personal Life",
+    "section": "👨‍👩‍👧‍👧 Family",
+    "text": "👨‍👩‍👧‍👧 Family\nI come from a loving family with two amazing older sisters. We remain very close, even as our lives have taken us to different parts of the world.\n\n\nThanks for stopping by and getting to know me beyond the publications and projects!"
+  },
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Salian V, Wang Z, Curran GL, Podulso JF, Kandimalla KK. (2026)\nMol Pharm. 23(6):3243-3253.\nDOI: 10.1021/acs.molpharmaceut.5c01565\n\n\n\n\nWang Z, Veerareddy V, Eberts PM, Azarin SM, Kandimalla KK. (2026)\nFluids Barriers CNS.\nDOI: 10.1186/s12987-026-00884-5\n\n\n\n\nWang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2025)\nCPT Pharmacometrics Syst Pharmacol.\nDOI: 10.1002/psp4.13296\n\n\n\n\nWang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. (2024)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.4c00633\n\n\n\n\nWang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. (2023)\nMol Pharmacol.\nDOI: 10.1124/molpharm.123.000670\n\n\n\n\nWang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. (2023)\nJ Pharmacol Exp Ther.\nDOI: 10.1124/jpet.122.001545\n\n\n\n\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\nNPJ Syst Biol Appl.\nDOI: 10.1038/s41540-022-00235-8\n\n\n\n\nWang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. (2021)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.1c00549\n\n\n\n\nMeng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. (2018)\nJ Med Chem.\nDOI: 10.1021/acs.jmedchem.8b00707"
+  },
+  {
+    "objectID": "Publications.html#selected-publications",
+    "href": "Publications.html#selected-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Salian V, Wang Z, Curran GL, Podulso JF, Kandimalla KK. (2026)\nMol Pharm. 23(6):3243-3253.\nDOI: 10.1021/acs.molpharmaceut.5c01565\n\n\n\n\nWang Z, Veerareddy V, Eberts PM, Azarin SM, Kandimalla KK. (2026)\nFluids Barriers CNS.\nDOI: 10.1186/s12987-026-00884-5\n\n\n\n\nWang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2025)\nCPT Pharmacometrics Syst Pharmacol.\nDOI: 10.1002/psp4.13296\n\n\n\n\nWang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. (2024)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.4c00633\n\n\n\n\nWang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. (2023)\nMol Pharmacol.\nDOI: 10.1124/molpharm.123.000670\n\n\n\n\nWang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. (2023)\nJ Pharmacol Exp Ther.\nDOI: 10.1124/jpet.122.001545\n\n\n\n\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\nNPJ Syst Biol Appl.\nDOI: 10.1038/s41540-022-00235-8\n\n\n\n\nWang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. (2021)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.1c00549\n\n\n\n\nMeng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. (2018)\nJ Med Chem.\nDOI: 10.1021/acs.jmedchem.8b00707"
+  },
+  {
+    "objectID": "Publications.html#full-list",
+    "href": "Publications.html#full-list",
+    "title": "Publications",
+    "section": "Full List",
+    "text": "Full List\n📄 View all publications on Google Scholar"
+  },
+  {
+    "objectID": "post.html",
+    "href": "post.html",
+    "title": "Blog",
+    "section": "",
+    "text": "夏威夷游记\n\n\n\nPersonal\n\n\n\n8天7晚的欧胡岛与大岛之旅\n\n\n\nZengtao Wang\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHawaii Trip Travelogue\n\n\n\nPersonal\n\nTravel\n\n\n\n8 Days on Oʻahu and the Island of Hawaiʻi (Big Island)\n\n\n\nZengtao Wang\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Blog\n\n\n\nPersonal\n\n\n\nWhy do I want to write blogs and what to expect?\n\n\n\nZengtao Wang\n\n\nAug 19, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/08202025_intro/index.html",
+    "href": "posts/08202025_intro/index.html",
+    "title": "First Blog",
+    "section": "",
+    "text": "Welcome to my personal blog! I’m Zengtao Wang, a PKPD scientist by training and currently a Pharmacometrician at Eli Lilly and Company. Outside of work, I am also a tennis rookie, a traveler and a cooking enthusiast. Over the past several years, I’ve been fortunate to grow through different phases of life—from student to researcher to early career professional. Along the way, I’ve collected experiences, lessons, and stories that I believe are worth sharing. This space is my way of connecting with others, reflecting on my journey, and hopefully offering something helpful, whether you’re a student, a young professional, or simply someone curious about PKPD science, career growth, or everyday life.\n\nWhy blogging?\nFor me, blogging is more than just putting words online—it’s a way to reflect and grow.\n\nWe live in a world overflowing with information. Writing helps me process it, find clarity, and maintain a sense of balance instead of feeling overwhelmed. (PK concept! Rate in == Rate out to be at steady state)\nSharing my perspective is a way of giving back. I feel fortunate for the journey that has brought me here, and I hope my experiences can help students and early career professionals who are navigating their own paths.\nMost importantly, writing is a mirror. It forces me to slow down, articulate my thoughts, and keep learning about myself.\n\n\n\nWhat to expect?\nAt least for now, my blogs will fall into three categories (though this may evolve as I do):\n\nCareer development: From undergraduate years to graduate school and into my early professional life: what I did right, what I did wrong, and what I learned along the way.\nTechnical: Deep dives into modeling and simulation: tools, methods, and lessons learned.\nPersonal: Because life isn’t only about work: my love for travel and cooking, with stories, experiences, and recipes to share."
   },
   {
     "objectID": "posts/11272025_hawaii_trip/index.html",
@@ -112,116 +147,53 @@
     "text": "Day 8 – 启程回家\n在大岛最后一天我们入住了Outrigger Resort，酒店每天都有不同的活动。我们当天是有Farmer’s Market，既有新鲜瓜果，也有手工艺品，十分热闹。上午在海边惬意地吃了一顿早餐，我们便前往Kona机场准备启程回家了。Kona机场并没有传统的气派航站楼，而是几个低矮的房子，四面透着海风，有着原始的海岛风情，这应该是全世界建设及维护成本最低的国际机场之一了。\n\n\n\n海边的紫薯冷萃咖啡\n\n\n\n\n\nKona机场\n\n\n\n8天7晚的夏威夷之旅很快画上了句号，有阳光沙滩的惬意，也有徒步旅行的疲惫；有目睹火山喷发的震撼，也有错过云海星空的遗憾；有尽观海洋生物的惊喜，也有对食物的差强人意……旅行就是这样，好与不好都是我们走过的路,有缺憾才能更加期待下一次出发。\n\n\n\n夏威夷航空"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Zengtao Wang",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "Hi there! My name is Zengtao Wang and I am a pharmacometrician working at Eli Lilly and Company. I am a PKPD scientist by training and I am passionate about applying quantitative modeling and simulation to drug development.\n\n\nUniversity of Minnesota, Twin Cities | Minneapolis, MN\nPhD in Pharmaceutics | Sept 2019 - June 2024\nShanghai Jiao Tong University | Shanghai, China\nB.S in Pharmacy | Sept 2015 - June 2019\n\n\n\nEli Lilly and Company | Indianapolis, IN\nAdvisor - Pharmacometrician | June 2024 - present"
+    "text": "Sr. Advisor - Pharmacometrician, Eli Lilly and Company (Sep 2026 - Present)\nGlobal PK/PD/PMx department\nSupervisor: Dr. Nieves Velez de Mendizabal\nMy current research at Eli Lilly and Company focuses on the development and application of quantitative pharmacology and pharmacometrics to support drug development in metabolic and neuroscience therapeutic areas.\n\n\n\nEmerson Award, Eli Lilly and Company, ATPLV-HSE organization\nLilly Innovator Award, 2024\nDoctoral Dissertation Fellowship, University of Minnesota, 2023\nMN2mrg: an open-source R Shiny application for automated translation of Monolix and NONMEM models to mrgsolve for simulation workflows. Software and tool demonstration, ACoP 2026.\nModel-based meta-analysis of MDS-UPDRS scores to improve clinical trial efficiency for Parkinson’s disease. Poster, ACoP14, 2023."
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Zengtao Wang",
+    "objectID": "research.html#pharmacometrics-in-metabolic-and-neuroscience-therapeutic-areas",
+    "href": "research.html#pharmacometrics-in-metabolic-and-neuroscience-therapeutic-areas",
+    "title": "Research",
     "section": "",
-    "text": "University of Minnesota, Twin Cities | Minneapolis, MN\nPhD in Pharmaceutics | Sept 2019 - June 2024\nShanghai Jiao Tong University | Shanghai, China\nB.S in Pharmacy | Sept 2015 - June 2019"
+    "text": "Sr. Advisor - Pharmacometrician, Eli Lilly and Company (Sep 2026 - Present)\nGlobal PK/PD/PMx department\nSupervisor: Dr. Nieves Velez de Mendizabal\nMy current research at Eli Lilly and Company focuses on the development and application of quantitative pharmacology and pharmacometrics to support drug development in metabolic and neuroscience therapeutic areas.\n\n\n\nEmerson Award, Eli Lilly and Company, ATPLV-HSE organization\nLilly Innovator Award, 2024\nDoctoral Dissertation Fellowship, University of Minnesota, 2023\nMN2mrg: an open-source R Shiny application for automated translation of Monolix and NONMEM models to mrgsolve for simulation workflows. Software and tool demonstration, ACoP 2026.\nModel-based meta-analysis of MDS-UPDRS scores to improve clinical trial efficiency for Parkinson’s disease. Poster, ACoP14, 2023."
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Zengtao Wang",
-    "section": "",
-    "text": "Eli Lilly and Company | Indianapolis, IN\nAdvisor - Pharmacometrician | June 2024 - present"
+    "objectID": "research.html#alzheimers-disease-type-2-diabetes-blood-brain-barrier-dysfunction",
+    "href": "research.html#alzheimers-disease-type-2-diabetes-blood-brain-barrier-dysfunction",
+    "title": "Research",
+    "section": "🧠 Alzheimer’s Disease & Type 2 Diabetes & Blood-Brain Barrier Dysfunction",
+    "text": "🧠 Alzheimer’s Disease & Type 2 Diabetes & Blood-Brain Barrier Dysfunction\nGraduate Research Assistant, University of Minnesota (Nov 2019 – May 2024)\nDepartment of Pharmaceutics\nAdvisor: Dr. Karunya K. Kandimalla\nMy dissertation research focused on understanding how amyloid-beta (Aβ) peptides and insulin resistance contribute to cerebrovascular dysfunction in Alzheimer’s disease, with a special emphasis on the blood-brain barrier (BBB). Key accomplishments include:\n\n📊 Developed a population pharmacokinetic model to study Aβ isoform trafficking and accumulation at the BBB endothelium.\nPublished in Molecular Pharmaceutics\n\n\n\n\nAβ PK model\n\n\n\n🔬 Conducted flow cytometry, western blot, and confocal imaging to investigate distinct molecular mechanisms of Aβ uptake and intracellular trafficking in BBB endothelial cells.\nPublished in Molecular Pharmacology\n🧠 Established a compartmental PK model to deconvolve plasma kinetics of imaging tracers from dynamic SPECT/CT heart scans.\nPublished in Journal of Pharmacology and Experimental Therapeutics\n\n\n\n\nDeconvoltution of plasma PK from heart imaging\n\n\n\n🧪 Studied the effect of HDL mimetic peptides and gut microbiome metabolites on Aβ accumulation using dynamic imaging and cellular assays.\nPublished in Molecular Pharmaceutics\n\n\n\n\n4F effect on Amyloid beta PK\n\n\n\n🧬 Interpreted time-series transcriptomics of insulin-exposed BBB endothelial cells and co-authored the manuscript.\nPublished in NPJ Systems Biology and Applications\n🔁 Built a quantitative systems pharmacology (QSP) model to simulate insulin signaling and VCAM1 expression in BBB endothelial cells. Integrated proteomics and transcriptomics to study vascular inflammation in Alzheimer’s disease.\nPublished in CPT: Pharmacometrics & Systems Pharmacology\n\n\n\n\nQSP model"
   },
   {
-    "objectID": "Personal.html",
-    "href": "Personal.html",
-    "title": "Personal Life",
-    "section": "",
-    "text": "Where it all began—surrounded by mountains and river valleys.\n\n\n\n2-year-old ME\n\n\n\n\n\n\nA young teenager stepping into a bustling city full of possibilities.\n\n\n\n\nDiving into science and shaping dreams.\n\n\n\n\nA proud moment marking my first contribution to science.\n\n\n\n\nA leap of faith and a heart full of hope.\n\n\n\nSJTU Class of 2019\n\n\n\n\n\n\nTurning knowledge into real-world impact.\n\n\n\nInternship at Biogen\n\n\n\n\n\n\nYears of hard work paid off—hello Dr. Me!\n\n\n\nPhD Graduation\n\n\n\n\n\n\nBuilding a future together, full of love and shared dreams.\n\n\n\nWedding & home"
+    "objectID": "research.html#modeling-neurodegenerative-disease-progression",
+    "href": "research.html#modeling-neurodegenerative-disease-progression",
+    "title": "Research",
+    "section": "🧬 Modeling Neurodegenerative Disease Progression",
+    "text": "🧬 Modeling Neurodegenerative Disease Progression\nModeling & Simulation Co-op, Biogen Inc. (Jan – Jun 2023)\nClinical Pharmacology and Pharmacometrics\nSupervisor: Dr. Jingxian (JC) Chen\n\n📈 Conducted model-based meta-analysis (MBMA) of MDS-UPDRS data to support early Parkinson’s disease (PD) trial design.\n🧮 Built nonlinear mixed-effect models (in NONMEM and Monolix) to describe disease progression and time-to-event outcomes.\n📊 Simulated longitudinal endpoint profiles to evaluate study designs and dosing strategies.\n🗣️ Presented modeling results and impact to internal project teams and stakeholders.\nPresented at ACoP14\n🧪 Developed a PK/PD model for antisense oligonucleotide (ASO) therapy in PD and simulated alternate regimens to inform dose optimization.\n\n\n\n\nPD disease progression model VPC"
   },
   {
-    "objectID": "Personal.html#big-milestones",
-    "href": "Personal.html#big-milestones",
-    "title": "Personal Life",
-    "section": "",
-    "text": "Where it all began—surrounded by mountains and river valleys.\n\n\n\n2-year-old ME\n\n\n\n\n\n\nA young teenager stepping into a bustling city full of possibilities.\n\n\n\n\nDiving into science and shaping dreams.\n\n\n\n\nA proud moment marking my first contribution to science.\n\n\n\n\nA leap of faith and a heart full of hope.\n\n\n\nSJTU Class of 2019\n\n\n\n\n\n\nTurning knowledge into real-world impact.\n\n\n\nInternship at Biogen\n\n\n\n\n\n\nYears of hard work paid off—hello Dr. Me!\n\n\n\nPhD Graduation\n\n\n\n\n\n\nBuilding a future together, full of love and shared dreams.\n\n\n\nWedding & home"
+    "objectID": "research.html#imaging-probe-development-for-cancer-detection",
+    "href": "research.html#imaging-probe-development-for-cancer-detection",
+    "title": "Research",
+    "section": "🧪 Imaging Probe Development for Cancer Detection",
+    "text": "🧪 Imaging Probe Development for Cancer Detection\nUndergraduate Research Assistant, Shanghai Jiao Tong University (Oct 2016 – Jun 2019)\nCollege of Pharmacy\nAdvisor: Dr. Qingqing Meng\n\n🧫 Designed and synthesized bimodal NIR and PET imaging probes targeting CYP1B1 for early tumor detection.\n🔬 Evaluated binding affinity and selectivity in CYP1B1-overexpressing cancer cell lines using flow cytometry and confocal imaging.\n🧠 Performed in vivo/ex vivo biodistribution and tumor visualization imaging.\nPublished in J. Med. Chem. and ChemBioChem."
   },
   {
-    "objectID": "Personal.html#about-me-outside-the-lab",
-    "href": "Personal.html#about-me-outside-the-lab",
-    "title": "Personal Life",
-    "section": "👋 About Me Outside the Lab",
-    "text": "👋 About Me Outside the Lab\nWhen I’m not modeling pharmacokinetics or optimizing drug development pipelines, I enjoy a variety of activities that help me stay grounded, creative, and connected."
+    "objectID": "research.html#bbb-drug-delivery-for-alzheimers-therapy",
+    "href": "research.html#bbb-drug-delivery-for-alzheimers-therapy",
+    "title": "Research",
+    "section": "🧪 BBB Drug Delivery for Alzheimer’s Therapy",
+    "text": "🧪 BBB Drug Delivery for Alzheimer’s Therapy\nSummer Research Intern, University of Tokyo / iCONM (Summer 2018)\nSupervisor: Dr. Kazunori Kataoka\n\n🧪 Prepared PEGylated anti-Aβ antibodies and characterized them with GPC and DLS.\n🧠 Assessed brain delivery and pharmacokinetics of modified antibodies to improve BBB penetration in Alzheimer’s disease."
   },
   {
-    "objectID": "Personal.html#hobbies-interests",
-    "href": "Personal.html#hobbies-interests",
-    "title": "Personal Life",
-    "section": "🌱 Hobbies & Interests",
-    "text": "🌱 Hobbies & Interests\n\nGardening — I find peace and joy in growing herbs and vegetables, especially during spring and summer. Watching something grow over time reminds me of both science and patience.\nCooking — Experimenting with new recipes is one of my favorite creative outlets. I enjoy cooking traditional Chinese dishes and trying global cuisines.\nTennis & Table Tennis — Great ways to stay active and have fun with friends and family.\nMahjong — I love playing mahjong with friends — it’s strategic, social, and always entertaining."
-  },
-  {
-    "objectID": "Personal.html#travel-nature",
-    "href": "Personal.html#travel-nature",
-    "title": "Personal Life",
-    "section": "🌄 Travel & Nature",
-    "text": "🌄 Travel & Nature\nI’ve had the pleasure of visiting several breathtaking places, including:\n\n🏞 Olympic National Park\n\n\n\n🏞 Great Smoky National Park\n\n\n\n🏜️ Death Valley National Park\n\n\n\n🏝 Shenandoah national park\n\n\n\n🏞️ Yellowstone National Park\n\n\n\n🏔️ Grand Teton National Park\n\n\n\n🍁 Banff National Park\n\n\n\n🏞 Yunnan, China\n\n\nI love spending time in nature — hiking, exploring, and soaking in the peace of the outdoors."
-  },
-  {
-    "objectID": "Personal.html#life-in-indiana",
-    "href": "Personal.html#life-in-indiana",
-    "title": "Personal Life",
-    "section": "🏠 Life in Indiana",
-    "text": "🏠 Life in Indiana\nI currently live in the Greater Indianapolis area, where Lu and I recently bought our first home 🏡. It’s been a wonderful journey turning a house into a home, and we’re excited for what the future holds here."
-  },
-  {
-    "objectID": "Personal.html#family",
-    "href": "Personal.html#family",
-    "title": "Personal Life",
-    "section": "👨‍👩‍👧‍👧 Family",
-    "text": "👨‍👩‍👧‍👧 Family\nI come from a loving family with two amazing older sisters. We remain very close, even as our lives have taken us to different parts of the world.\n\n\nThanks for stopping by and getting to know me beyond the publications and projects!"
-  },
-  {
-    "objectID": "Publications.html",
-    "href": "Publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Wang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2024)\nCPT Pharmacometrics Syst Pharmacol.\nDOI: 10.1002/psp4.13296\n\n\n\n\nWang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. (2024)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.4c00633\n\n\n\n\nWang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. (2023)\nMol Pharmacol.\nDOI: 10.1124/molpharm.123.000670\n\n\n\n\nWang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. (2023)\nJ Pharmacol Exp Ther.\nDOI: 10.1124/jpet.122.001545\n\n\n\n\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\nNPJ Syst Biol Appl.\nDOI: 10.1038/s41540-022-00288-0\n\n\n\n\nWang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. (2021)\nMol Pharm.\nDOI: 10.1021/acs.jmedchem.8b01633\n\n\n\n\nMeng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. (2018)\nJ Med Chem.\nDOI: 10.1021/acs.jmedchem.8b00707"
-  },
-  {
-    "objectID": "Publications.html#selected-publications",
-    "href": "Publications.html#selected-publications",
-    "title": "Publications",
-    "section": "",
-    "text": "Wang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2024)\nCPT Pharmacometrics Syst Pharmacol.\nDOI: 10.1002/psp4.13296\n\n\n\n\nWang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. (2024)\nMol Pharm.\nDOI: 10.1021/acs.molpharmaceut.4c00633\n\n\n\n\nWang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. (2023)\nMol Pharmacol.\nDOI: 10.1124/molpharm.123.000670\n\n\n\n\nWang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. (2023)\nJ Pharmacol Exp Ther.\nDOI: 10.1124/jpet.122.001545\n\n\n\n\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\nNPJ Syst Biol Appl.\nDOI: 10.1038/s41540-022-00288-0\n\n\n\n\nWang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. (2021)\nMol Pharm.\nDOI: 10.1021/acs.jmedchem.8b01633\n\n\n\n\nMeng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. (2018)\nJ Med Chem.\nDOI: 10.1021/acs.jmedchem.8b00707"
-  },
-  {
-    "objectID": "Publications.html#full-list",
-    "href": "Publications.html#full-list",
-    "title": "Publications",
-    "section": "Full List",
-    "text": "Full List\n📄 View all publications on Google Scholar"
-  },
-  {
-    "objectID": "post.html",
-    "href": "post.html",
-    "title": "Blog",
-    "section": "",
-    "text": "美国之旅 · 行前指南\n\n\n\n旅行\n\n家庭\n\n\n\n为爸爸妈妈专属定制的美国之行行前指南，包含航班信息、行李清单、入境流程等详细说明。\n\n\n\nZengtao Wang\n\n\nMay 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n夏威夷游记\n\n\n\nPersonal\n\n\n\n8天7晚的欧胡岛与大岛之旅\n\n\n\nZengtao Wang\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHawaii Trip Travelogue\n\n\n\nPersonal\n\nTravel\n\n\n\n8 Days on Oʻahu and the Island of Hawaiʻi (Big Island)\n\n\n\nZengtao Wang\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Blog\n\n\n\nPersonal\n\n\n\nWhy do I want to write blogs and what to expect?\n\n\n\nZengtao Wang\n\n\nAug 19, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/08202025_intro/index.html",
-    "href": "posts/08202025_intro/index.html",
-    "title": "First Blog",
-    "section": "",
-    "text": "Welcome to my personal blog! I’m Zengtao Wang, a PKPD scientist by training and currently a Pharmacometrician at Eli Lilly and Company. Outside of work, I am also a tennis rookie, a traveler and a cooking enthusiast. Over the past several years, I’ve been fortunate to grow through different phases of life—from student to researcher to early career professional. Along the way, I’ve collected experiences, lessons, and stories that I believe are worth sharing. This space is my way of connecting with others, reflecting on my journey, and hopefully offering something helpful, whether you’re a student, a young professional, or simply someone curious about PKPD science, career growth, or everyday life.\n\nWhy blogging?\nFor me, blogging is more than just putting words online—it’s a way to reflect and grow.\n\nWe live in a world overflowing with information. Writing helps me process it, find clarity, and maintain a sense of balance instead of feeling overwhelmed. (PK concept! Rate in == Rate out to be at steady state)\nSharing my perspective is a way of giving back. I feel fortunate for the journey that has brought me here, and I hope my experiences can help students and early career professionals who are navigating their own paths.\nMost importantly, writing is a mirror. It forces me to slow down, articulate my thoughts, and keep learning about myself.\n\n\n\nWhat to expect?\nAt least for now, my blogs will fall into three categories (though this may evolve as I do):\n\nCareer development: From undergraduate years to graduate school and into my early professional life: what I did right, what I did wrong, and what I learned along the way.\nTechnical: Deep dives into modeling and simulation: tools, methods, and lessons learned.\nPersonal: Because life isn’t only about work: my love for travel and cooking, with stories, experiences, and recipes to share."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "objectID": "research.html#related-publications",
+    "href": "research.html#related-publications",
+    "title": "Research",
+    "section": "🔗 Related Publications",
+    "text": "🔗 Related Publications\n\n📂 See full list on Google Scholar"
   },
   {
     "objectID": "posts/11272025_hawaii_trip/index_en.html",
@@ -287,10 +259,115 @@
     "text": "Day 8 – Departure\nLast morning: Outrigger Resort activities included a farmer’s market—fresh produce and handmade crafts. Leisurely ocean‑side breakfast, then to KOA. Kona Airport is minimal—open‑air, breezy; among the lowest‑maintenance international airports you’ll see.\n  \n\nEight days passed quickly: sun & sand relaxation vs hiking fatigue; eruption awe vs missed cloud‑sea sunsets; marine life joy vs underwhelming meals. Travel blends delight and imperfection into memory—we carry both, and the gaps make us look forward to the next journey."
   },
   {
-    "objectID": "posts/05112026_parents_us_trip_guide/index.html",
-    "href": "posts/05112026_parents_us_trip_guide/index.html",
-    "title": "美国之旅 · 行前指南",
+    "objectID": "file/Zengtao Wang_CV.html",
+    "href": "file/Zengtao Wang_CV.html",
+    "title": "Zengtao Wang",
     "section": "",
-    "text": "🇺🇸\n\n美国之旅\n\n\n行前指南 · 专为爸爸妈妈准备\n\n\n2026年5月22日出发\n\n\n成都 &lt;span&gt;✈&lt;/span&gt; 香港 &lt;span&gt;✈&lt;/span&gt; 芝加哥 &lt;span&gt;→&lt;/span&gt; 印第安纳\n\n\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-red\"&gt;❤️‍🩹&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;健康须知 · 最重要！&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-red\"&gt;\n  &lt;div class=\"alert-icon\"&gt;💊&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;糖尿病药物 — 必须随身携带&lt;/strong&gt;\n    &lt;ul&gt;\n      &lt;li&gt;胰岛素或二甲双胍请携带 &lt;strong&gt;一个月以上用量&lt;/strong&gt;（在美停留时间可能较长，多备无妨）&lt;/li&gt;\n      &lt;li&gt;胰岛素须放随身行李，&lt;strong&gt;不可托运&lt;/strong&gt;（温度影响药效）&lt;/li&gt;\n      &lt;li&gt;携带医生开具的处方或诊断证明（最好中英文双语）&lt;/li&gt;\n      &lt;li&gt;注射器/胰岛素笔随身携带，过安检时告知工作人员&lt;/li&gt;\n    &lt;/ul&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-gold\"&gt;\n  &lt;div class=\"alert-icon\"&gt;🍽️&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;饮食注意&lt;/strong&gt;\n    &lt;ul&gt;\n      &lt;li&gt;美国食物分量大，含糖/脂肪较高，注意控制摄入&lt;/li&gt;\n      &lt;li&gt;芝加哥中国城可以找到熟悉的中餐，印第安纳亚超也有食材&lt;/li&gt;\n      &lt;li&gt;随身携带小零食，防止血糖过低&lt;/li&gt;\n    &lt;/ul&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-sky\"&gt;\n  &lt;div class=\"alert-icon\"&gt;🩺&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;出发前建议&lt;/strong&gt;\n    &lt;ul&gt;\n      &lt;li&gt;出发前去医院做一次检查，确认血糖稳定&lt;/li&gt;\n      &lt;li&gt;长途飞行（14小时45分钟）期间多走动、多喝水&lt;/li&gt;\n    &lt;/ul&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-sky\"&gt;✈️&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;航班行程&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"flight-timeline\"&gt;\n\n  &lt;!-- 第一段 --&gt;\n  &lt;div class=\"flight-stop\"&gt;\n    &lt;div class=\"flight-card\"&gt;\n      &lt;div class=\"flight-card-header\"&gt;\n        &lt;span class=\"flight-num\"&gt;CX 917&lt;/span&gt;\n        &lt;span class=\"flight-airline\"&gt;国泰航空 · 第一段&lt;/span&gt;\n      &lt;/div&gt;\n      &lt;div class=\"flight-route\"&gt;\n        &lt;div class=\"flight-city\"&gt;\n          &lt;div class=\"time\"&gt;08:10&lt;/div&gt;\n          &lt;div class=\"city\"&gt;成都天府 T1&lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"flight-arrow\"&gt;\n          &lt;div&gt;&lt;/div&gt;\n          &lt;div class=\"plane\"&gt;✈&lt;/div&gt;\n          &lt;div class=\"duration\"&gt;飞行 3 小时&lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"flight-city\"&gt;\n          &lt;div class=\"time\"&gt;11:10&lt;/div&gt;\n          &lt;div class=\"city\"&gt;香港 T1&lt;/div&gt;\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- 转机 --&gt;\n  &lt;div class=\"layover-card\"&gt;\n    &lt;div class=\"layover-icon\"&gt;⏱️&lt;/div&gt;\n    &lt;div class=\"layover-text\"&gt;\n      &lt;strong&gt;香港转机 · 1小时&lt;/strong&gt;\n      &lt;p&gt;同一航站楼 T1，行李直挂芝加哥，无需取行李。轮椅服务人员会在下机处等候引导，轻松换乘。&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;!-- 第二段 --&gt;\n  &lt;div class=\"flight-stop\"&gt;\n    &lt;div class=\"flight-card\"&gt;\n      &lt;div class=\"flight-card-header\"&gt;\n        &lt;span class=\"flight-num\"&gt;CX 806&lt;/span&gt;\n        &lt;span class=\"flight-airline\"&gt;国泰航空 · 第二段&lt;/span&gt;\n      &lt;/div&gt;\n      &lt;div class=\"flight-route\"&gt;\n        &lt;div class=\"flight-city\"&gt;\n          &lt;div class=\"time\"&gt;12:10&lt;/div&gt;\n          &lt;div class=\"city\"&gt;香港 T1&lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"flight-arrow\"&gt;\n          &lt;div&gt;&lt;/div&gt;\n          &lt;div class=\"plane\"&gt;✈&lt;/div&gt;\n          &lt;div class=\"duration\"&gt;飞行 14 小时 45 分&lt;/div&gt;\n        &lt;/div&gt;\n        &lt;div class=\"flight-city\"&gt;\n          &lt;div class=\"time\"&gt;13:55&lt;/div&gt;\n          &lt;div class=\"city\"&gt;芝加哥 O'Hare T5&lt;/div&gt;\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-gold\" style=\"margin-top:14px;\"&gt;\n  &lt;div class=\"alert-icon\"&gt;🕐&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;时差说明&lt;/strong&gt;\n    &lt;p&gt;芝加哥比成都晚 &lt;strong&gt;13 小时&lt;/strong&gt;（夏令时）。到达当地时间是 5月22日 下午1:55，但身体感觉是5月23日凌晨。请放松休息，不用刻意熬夜调时差。&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-gold\"&gt;🧳&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;行李清单&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"luggage-grid\"&gt;\n  &lt;div class=\"luggage-item\"&gt;\n    &lt;div class=\"lug-icon\"&gt;🧳&lt;/div&gt;\n    &lt;div class=\"lug-title\"&gt;托运行李&lt;/div&gt;\n    &lt;div class=\"lug-detail\"&gt;每人 1 件，限重 23 公斤&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"luggage-item\"&gt;\n    &lt;div class=\"lug-icon\"&gt;🎒&lt;/div&gt;\n    &lt;div class=\"lug-title\"&gt;随身行李&lt;/div&gt;\n    &lt;div class=\"lug-detail\"&gt;每人 1 件，限重 7 公斤&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"checklist\"&gt;\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;💊 医疗 · 随身行李（必带！）&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item important\"&gt;胰岛素 / 二甲双胍（一个月以上用量）&lt;/div&gt;\n      &lt;div class=\"check-item important\"&gt;注射器 / 胰岛素笔&lt;/div&gt;\n      &lt;div class=\"check-item important\"&gt;医生处方证明（中英文双语）&lt;/div&gt;\n      &lt;div class=\"check-item important\"&gt;海关解释信 + 证明材料（与证件放一起！）&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;📄 证件&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item\"&gt;护照（有效期6个月以上）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;美国签证（B1/B2）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;机票打印版&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;本指南打印版&lt;/div&gt;\n      &lt;div class=\"check-item important\"&gt;海关解释信 + 证明材料（与护照放一起！）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;子女联系卡（放贴身口袋）&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;👕 衣物（5月底 芝加哥/印第安纳 天气约 15–26°C）&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item\"&gt;薄外套 / 轻薄夹克 2件&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;短袖 T恤 5–6件&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;长裤 2–3条&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;舒适步行鞋&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;内衣裤（足量）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;雨伞（折叠小伞）&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;🔌 电子设备&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item\"&gt;手机 + 充电器&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;🧴 飞机随身舒适用品&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item\"&gt;湿巾（飞机上擦手擦脸用，很方便）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;一次性拖鞋（长途飞机穿着舒适）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;颈枕（随身携带，飞机上使用）&lt;/div&gt;\n      &lt;div class=\"check-item\"&gt;脚垫（随身携带，飞机上使用）&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;🍵 可选：从国内带&lt;/div&gt;\n    &lt;div class=\"cat-items\"&gt;\n      &lt;div class=\"check-item\"&gt;茶叶、零食&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-sky\"&gt;🛂&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;落地芝加哥 · 入境流程&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-green\" style=\"margin-bottom:18px;\"&gt;\n  &lt;div class=\"alert-icon\"&gt;♿&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;轮椅服务已安排&lt;/strong&gt;\n    &lt;p&gt;子女已向国泰航空申请轮椅服务。下飞机后无需担心，地勤人员会在舱门等候，全程推您通过海关和行李提取，直到出口与家人会合。&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"steps\"&gt;\n  &lt;div class=\"step\"&gt;\n    &lt;strong&gt;🛬 下飞机&lt;/strong&gt;\n    &lt;p&gt;在 T5 国际到达区下机。轮椅地勤会在舱门口等候。不懂英文没关系，跟着地勤走即可。&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\"step\"&gt;\n    &lt;strong&gt;🛂 美国海关 · CBP&lt;/strong&gt;\n    &lt;p&gt;在自助机（APC kiosk）或人工通道办理入境。护照递给官员，回答\"I'm visiting my child（我来看望孩子）\"。如需说明携带的药物，直接将&lt;strong&gt;海关解释信连同证明材料&lt;/strong&gt;递给工作人员即可，无需开口解释。&lt;/p&gt;\n    &lt;span class=\"step-tag\"&gt;📌 全程可说：I don't speak English, my child is waiting outside.&lt;/span&gt;\n  &lt;/div&gt;\n  &lt;div class=\"step\"&gt;\n    &lt;strong&gt;🧳 提取行李&lt;/strong&gt;\n    &lt;p&gt;跟随地勤至行李转盘。航班号是 CX806，找对应的转盘取行李。行李牌留好，出口可能需要查看。&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\"step\"&gt;\n    &lt;strong&gt;🔍 海关申报&lt;/strong&gt;\n    &lt;p&gt;在飞机上填写海关申报表。此行未携带食品或任何违禁物品，&lt;strong&gt;无需特别申报&lt;/strong&gt;，正常提交即可，不必紧张。&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;div class=\"step\"&gt;\n    &lt;strong&gt;🚪 出口会合&lt;/strong&gt;\n    &lt;p&gt;通过出口后即可与家人会合。芝加哥 O'Hare T5 出口为公共区域，子女会在此等候。&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-green\"&gt;🗺️&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;旅行亮点&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;!-- 芝加哥 --&gt;\n&lt;div style=\"margin-bottom:10px; font-size:13px; font-weight:700; color:var(--ink-soft); letter-spacing:2px;\"&gt;🏙️ 芝加哥 · 5月22–24日（3天）&lt;/div&gt;\n\n&lt;div class=\"itinerary-day\"&gt;\n  &lt;div class=\"day-header chicago\"&gt;\n    &lt;div&gt;\n      &lt;div class=\"day-label\"&gt;DAY 1–3&lt;/div&gt;\n      &lt;div class=\"day-title\"&gt;芝加哥市区探索&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"day-date\"&gt;5月22–24日&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"day-activities\"&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🏮&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;中国城（Chinatown）&lt;/strong&gt; — 正宗中餐、中文招牌、亲切熟悉的氛围，逛街购物两不误&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🚢&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;建筑游船（Architecture Boat Tour）&lt;/strong&gt; — 坐船游览芝加哥河，沿途欣赏壮观的摩天大楼，非常震撼&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🌊&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;密歇根湖&lt;/strong&gt; — 湖岸线壮阔如海，空气清新，非常适合散步&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🛌&lt;/div&gt;\n      &lt;div&gt;酒店休息 · 倒时差，不安排过多活动，以舒适为主&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;!-- 印第安纳 --&gt;\n&lt;div style=\"margin-bottom:10px; margin-top:20px; font-size:13px; font-weight:700; color:var(--ink-soft); letter-spacing:2px;\"&gt;🌿 印第安纳 · 5月24日起（约11天）&lt;/div&gt;\n\n&lt;div class=\"itinerary-day\"&gt;\n  &lt;div class=\"day-header indiana\"&gt;\n    &lt;div&gt;\n      &lt;div class=\"day-label\"&gt;IN HOME&lt;/div&gt;\n      &lt;div class=\"day-title\"&gt;印第安纳 · 温馨家庭时光&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"day-date\"&gt;5月24日起&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"day-activities\"&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🏢&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;参观 Eli Lilly 公司&lt;/strong&gt; — 子女工作的地方，世界500强制药企业，园区美丽宽广&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🚣&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;中央运河（Canal Walk）&lt;/strong&gt; — 印第安纳波利斯市中心，沿运河漫步，风景优美，周边餐厅众多&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🦁&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;印第安纳波利斯动物园&lt;/strong&gt; — 面积宏大，有大象、海豚、猩猩等，轮椅友好&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🎓&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;印第安纳大学校园&lt;/strong&gt; — 美丽的大学城，红砖建筑，绿树成荫，感受美式大学氛围&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🌲&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;州立公园野餐&lt;/strong&gt; — 美国自然保护区，森林溪流，野餐烧烤，呼吸清新空气&lt;/div&gt;\n    &lt;/div&gt;\n    &lt;div class=\"activity\"&gt;\n      &lt;div class=\"activity-icon\"&gt;🏡&lt;/div&gt;\n      &lt;div&gt;&lt;strong&gt;居家休闲&lt;/strong&gt; — 在子女家放松，享受家庭温馨时光，不必每天出门&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-purple\"&gt;🗣️&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;常用英文 · 万能救急句&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-sky\" style=\"margin-bottom:16px;\"&gt;\n  &lt;div class=\"alert-icon\"&gt;💡&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;不会说？指一指就行！&lt;/strong&gt;\n    &lt;p&gt;遇到不懂的情况，直接把手机拿出来，把下面对应的英文句子指给对方看。美国人通常很友善，会尽力帮助您。&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"checklist\" style=\"margin-bottom:20px;\"&gt;\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;🛂 入境 / 海关&lt;/div&gt;\n    &lt;div class=\"cat-items\" style=\"grid-template-columns:1fr;\"&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;I am here to visit my child.&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;我来看望我的孩子。&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;I will stay for 14 days.&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;我将停留14天。&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px;\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;I don't speak English. Can you help me?&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;我不会说英语，您能帮我吗？&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;🏥 健康 / 紧急&lt;/div&gt;\n    &lt;div class=\"cat-items\" style=\"grid-template-columns:1fr;\"&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--red); font-weight:700; font-size:15px;\"&gt;I have diabetes. I need my insulin.&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;我有糖尿病，我需要我的胰岛素。&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--red); font-weight:700; font-size:15px;\"&gt;I don't feel well. Please call my child.&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;我感觉不舒服，请帮我联系我的孩子。&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px;\"&gt;\n        &lt;div style=\"color:var(--red); font-weight:700; font-size:15px;\"&gt;Call 911, emergency!&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;打911，紧急情况！&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"checklist-category\"&gt;\n    &lt;div class=\"cat-header\"&gt;✈️ 机场 / 交通&lt;/div&gt;\n    &lt;div class=\"cat-items\" style=\"grid-template-columns:1fr;\"&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;Where is the wheelchair service?&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;轮椅服务在哪里？&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px; border-bottom:1px solid var(--border);\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;Where is the restroom?&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;洗手间在哪里？&lt;/div&gt;\n      &lt;/div&gt;\n      &lt;div style=\"padding:6px 0; font-size:14px;\"&gt;\n        &lt;div style=\"color:var(--sky); font-weight:700; font-size:15px;\"&gt;Thank you very much!&lt;/div&gt;\n        &lt;div style=\"color:var(--ink-soft); font-size:13px;\"&gt;非常感谢！（任何帮助都可以说）&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div style=\"margin-bottom:10px; font-size:14px; font-weight:700; color:var(--ink-soft);\"&gt;🔤 常用单词&lt;/div&gt;\n&lt;div class=\"vocab-grid\"&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Exit&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;出口&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Restroom&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;洗手间&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Customs&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;海关&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Baggage Claim&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;行李提取处&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Gate&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;登机口&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Boarding Pass&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;登机牌&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Passport&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;护照&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Police&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;警察&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Help&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;帮助&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Hospital&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;医院&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;Pharmacy&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;药店&lt;/div&gt;&lt;/div&gt;\n  &lt;div class=\"vocab-card\"&gt;&lt;div class=\"vocab-en\"&gt;No / Yes&lt;/div&gt;&lt;div class=\"vocab-zh\"&gt;不 / 是&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div class=\"section-header\"&gt;\n  &lt;div class=\"section-icon icon-red\"&gt;📞&lt;/div&gt;\n  &lt;div class=\"section-title\"&gt;重要联系方式&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"alert alert-gold\" style=\"margin-bottom:16px;\"&gt;\n  &lt;div class=\"alert-icon\"&gt;📋&lt;/div&gt;\n  &lt;div class=\"alert-body\"&gt;\n    &lt;strong&gt;建议打印此页，折叠放入随身衣物口袋&lt;/strong&gt;\n    &lt;p&gt;无论在哪里遇到困难，把这张纸递给周围的人，说 \"Please help me call this number.\"（请帮我打这个电话）&lt;/p&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div class=\"emergency-grid\"&gt;\n  &lt;div class=\"emergency-card\"&gt;\n    &lt;div class=\"em-icon\"&gt;🚨&lt;/div&gt;\n    &lt;div&gt;\n      &lt;div class=\"em-title\"&gt;美国紧急求救&lt;/div&gt;\n      &lt;div class=\"em-number\"&gt;911&lt;/div&gt;\n      &lt;div class=\"em-detail\"&gt;火警、急救、警察（免费，全美通用）&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"emergency-card\"&gt;\n    &lt;div class=\"em-icon\"&gt;👨&lt;/div&gt;\n    &lt;div&gt;\n      &lt;div class=\"em-title\"&gt;王增涛（儿子/女婿）&lt;/div&gt;\n      &lt;div class=\"em-number\" style=\"font-size:16px; color:var(--sky);\"&gt;+1 651-424-6529&lt;/div&gt;\n      &lt;div class=\"em-detail\"&gt;随时可以打，接通后说\"我需要帮助\"&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"emergency-card\"&gt;\n    &lt;div class=\"em-icon\"&gt;👩&lt;/div&gt;\n    &lt;div&gt;\n      &lt;div class=\"em-title\"&gt;刘璐（女儿/儿媳）&lt;/div&gt;\n      &lt;div class=\"em-number\" style=\"font-size:16px; color:var(--sky);\"&gt;+1 240-487-8551&lt;/div&gt;\n      &lt;div class=\"em-detail\"&gt;随时可以打，接通后说\"我需要帮助\"&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"emergency-card\"&gt;\n    &lt;div class=\"em-icon\"&gt;✈️&lt;/div&gt;\n    &lt;div&gt;\n      &lt;div class=\"em-title\"&gt;国泰航空服务&lt;/div&gt;\n      &lt;div class=\"em-number\" style=\"font-size:14px; color:var(--sky);\"&gt;+1-800-233-2742&lt;/div&gt;\n      &lt;div class=\"em-detail\"&gt;机场及航班相关问题&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"emergency-card\"&gt;\n    &lt;div class=\"em-icon\"&gt;🏥&lt;/div&gt;\n    &lt;div&gt;\n      &lt;div class=\"em-title\"&gt;中国驻芝加哥总领馆&lt;/div&gt;\n      &lt;div class=\"em-number\" style=\"font-size:14px; color:var(--sky);\"&gt;+1-312-803-0095&lt;/div&gt;\n      &lt;div class=\"em-detail\"&gt;紧急领事协助&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n\n\n&lt;div style=\"background: linear-gradient(135deg, #1A3A5C, #2A5A8C); border-radius: 18px; padding: 36px 32px; text-align: center; color: white;\"&gt;\n  &lt;div style=\"font-size:40px; margin-bottom:16px;\"&gt;🏡&lt;/div&gt;\n  &lt;div style=\"font-family:'Noto Serif SC',serif; font-size:24px; font-weight:700; margin-bottom:12px; letter-spacing:2px;\"&gt;爸爸妈妈，欢迎来美国！&lt;/div&gt;\n  &lt;div style=\"font-size:16px; color:rgba(255,255,255,0.8); line-height:2; max-width:500px; margin:0 auto;\"&gt;\n    一路上不用担心，子女已经为您们安排好了一切。&lt;br&gt;\n    轮椅服务会全程陪伴，只需放松心情，享受旅程。&lt;br&gt;\n    遇到任何问题，随时联系我们，我们在终点等您！\n  &lt;/div&gt;\n  &lt;div style=\"margin-top:24px; font-size:14px; color:rgba(255,255,255,0.55);\"&gt;总行程约 14 天 · 成都 → 香港 → 芝加哥 → 印第安纳&lt;/div&gt;\n&lt;/div&gt;\n\n\n\n美国之旅行前指南 · 为爸爸妈妈专属定制 · 2026年5月"
+    "text": "Indianapolis, Indiana | zntao.wang@gmail.com | LinkedIn | Google Scholar | GitHub | Personal website"
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#professional-profile",
+    "href": "file/Zengtao Wang_CV.html#professional-profile",
+    "title": "Zengtao Wang",
+    "section": "PROFESSIONAL PROFILE",
+    "text": "PROFESSIONAL PROFILE\nPharmacometrics and quantitative pharmacology scientist applying population PK/PD, model-based meta-analysis, mechanistic modeling, and simulation to clinical development and trial design across neuroscience and diabetes. At Eli Lilly, works on clinical pharmacology and pharmacometrics studies, workflow automation, and emerging AI-augmented workflows. Doctoral research examined the pharmacokinetics and pharmacodynamics of amyloid beta peptides and insulin in Alzheimer’s disease, with a focus on blood-brain barrier biology and translational pharmacology."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#professional-experience",
+    "href": "file/Zengtao Wang_CV.html#professional-experience",
+    "title": "Zengtao Wang",
+    "section": "PROFESSIONAL EXPERIENCE",
+    "text": "PROFESSIONAL EXPERIENCE\nEli Lilly and Company | Sr. Advisor - Pharmacometrician\nIndianapolis, IN | September 2026-Present | Supervisor: Nieves Velez de Mendizabal, PhD\n\nLead pharmacometrics support for clinical development in neuroscience and diabetes, informing study design and regulatory decisions.\nBuild automation tools to streamline pharmacometrics workflows and explore AI-augmented approaches.\n\nEli Lilly and Company | Advisor - Pharmacometrician\nIndianapolis, IN | June 2024-August 2026 | Supervisor: Nieves Velez de Mendizabal, PhD\n\nSupported clinical pharmacology studies with quantitative modeling, simulation, and regulatory analyses.\n\nBiogen Inc. | Modeling and Simulation Co-op\nClinical Pharmacology and Pharmacometrics, Cambridge, MA | January-June 2023 | Supervisor: Jingxian (JC) Chen, PhD\n\nBuilt a model-based meta-analysis of MDS-UPDRS outcomes in early Parkinson’s disease using aggregated clinical data; developed disease-progression and time-to-event models in NONMEM and Monolix, then simulated endpoint trajectories to inform trial design.\nDeveloped a population PK/PD model for a Parkinson’s disease antisense oligonucleotide and simulated alternative dosing regimens to support dose optimization.\nPresented model assumptions, findings, and applications to internal stakeholders; presented the MBMA work at ACoP14."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#education",
+    "href": "file/Zengtao Wang_CV.html#education",
+    "title": "Zengtao Wang",
+    "section": "EDUCATION",
+    "text": "EDUCATION\nPhD, Pharmaceutics | University of Minnesota Twin Cities\nMinneapolis, MN | September 2019-May 2024 | GPA: 4.00/4.00\n\nDissertation: Anomalous Aβ exposure and blood-brain barrier insulin resistance induce cerebrovascular dysfunction in Alzheimer’s disease.\n\nBS, Pharmacy | Shanghai Jiao Tong University\nShanghai, China | September 2015-June 2019 | GPA: 3.88/4.00\n\nUndergraduate thesis: Design, synthesis and biological evaluation of molecular imaging probe targeting cytochrome P450 1B1."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#research-experience",
+    "href": "file/Zengtao Wang_CV.html#research-experience",
+    "title": "Zengtao Wang",
+    "section": "RESEARCH EXPERIENCE",
+    "text": "RESEARCH EXPERIENCE\nBlood-brain barrier and Alzheimer’s disease research | Graduate Research Assistant\nDepartment of Pharmaceutics, University of Minnesota Twin Cities | November 2019-May 2024 | Advisor: Karunya K. Kandimalla, PhD\n\nDeveloped population PK and mechanistic models to investigate trafficking and accumulation of amyloid-beta isoforms at the blood-brain barrier endothelium; published in Molecular Pharmaceutics.\nCombined flow cytometry, western blotting, and cellular imaging to study amyloid-beta uptake and intracellular trafficking; published in Molecular Pharmacology.\nEstablished a compartmental PK model to estimate plasma pharmacokinetics of macromolecular tracers from dynamic SPECT/CT heart imaging.\nAnalyzed dynamic SPECT/CT and intracellular trafficking data to evaluate the effects of an HDL mimetic peptide and a gut microbiome metabolite on endothelial amyloid-beta accumulation.\nInterpreted time-series transcriptomic data after insulin exposure and developed a quantitative systems pharmacology model linking insulin signaling, VCAM1 expression, and cerebrovascular inflammation.\n\nCYP1B1 molecular imaging probes | Undergraduate Research Assistant\nSchool of Pharmacy, Shanghai Jiao Tong University | October 2016-June 2019 | Advisor: Qingqing Meng, PhD\n\nSynthesized and characterized near-infrared and NIR-PET bimodal probes targeting CYP1B1.\nEvaluated probe binding and selectivity in CYP1B1-overexpressing cancer cells using flow cytometry and confocal microscopy; assessed tumor visualization and biodistribution in vivo.\n\nAnti-amyloid antibody delivery across the blood-brain barrier | Summer Research Intern\nUniversity of Tokyo / Innovation Center of Nanomedicine, Kawasaki, Japan | Summer 2018 | Supervisor: Kazunori Kataoka, PhD\n\nPrepared and characterized PEGylated antibodies using gel permeation chromatography and dynamic light scattering; investigated pharmacokinetics and brain accumulation."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#technical-skills",
+    "href": "file/Zengtao Wang_CV.html#technical-skills",
+    "title": "Zengtao Wang",
+    "section": "TECHNICAL SKILLS",
+    "text": "TECHNICAL SKILLS\nModeling: Population PK/PD, nonlinear mixed-effects modeling, model-based meta-analysis, time-to-event modeling, quantitative systems pharmacology, clinical trial simulation\nAutomation and AI: Pharmacometric workflow automation; interest in AI-augmented workflows\nSoftware: NONMEM, Monolix, MATLAB/SimBiology, R, mrgsolve, Phoenix WinNonlin, SAAM II, Stella Architect\nLaboratory: Cell culture, permeability assays, ELISA, flow cytometry, confocal microscopy, western blotting, HPLC, chemical synthesis"
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#selected-honors-and-awards",
+    "href": "file/Zengtao Wang_CV.html#selected-honors-and-awards",
+    "title": "Zengtao Wang",
+    "section": "SELECTED HONORS AND AWARDS",
+    "text": "SELECTED HONORS AND AWARDS\n\nEmerson Award - Eli Lilly and Company, ATPLV-HSE organization\nLilly Innovator Award - Eli Lilly and Company, 2024\nDoctoral Dissertation Fellowship - University of Minnesota, 2023\nBighley Graduate Fellowship - University of Minnesota College of Pharmacy, 2023\nHighlighted Trainee Author - Molecular Pharmacology, 2023\nHighlighted Trainee Author - The Journal of Pharmacology and Experimental Therapeutics, 2023\nResearch Award - American Association of Indian Pharmaceutical Scientists, 2023\nRonald J. Sawchuk Fellowship in Pharmacokinetics - University of Minnesota College of Pharmacy, 2022\nGPEN 2022 sponsored participant - Selected by faculty; sponsored by Upsher-Smith, 2022\nUMII-MnDRIVE PhD Graduate Assistantship Award - University of Minnesota Informatics Institute, 2021\nRunner-up, Three-Minute Thesis - University of Minnesota College of Pharmacy, 2021\nEdward G. Rippie Fellowship in Pharmaceutics - University of Minnesota College of Pharmacy, 2021\nCertificate of Excellent Bachelor Thesis (top 1%) - Shanghai Jiao Tong University, 2019\nChina National Scholarship - Ministry of Education of China, 2018\nShanghai Municipal Government Scholarship - Shanghai Municipal People’s Government, 2017"
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#peer-reviewed-publications",
+    "href": "file/Zengtao Wang_CV.html#peer-reviewed-publications",
+    "title": "Zengtao Wang",
+    "section": "PEER-REVIEWED PUBLICATIONS",
+    "text": "PEER-REVIEWED PUBLICATIONS\n\nWang Z, Veerareddy V, Eberts PM, Azarin SM, Kandimalla KK. Endothelial-pericyte interactions activate insulin signaling and its implications for blood-brain barrier dysfunction in Alzheimer’s disease. Fluids Barriers CNS. 2026.\nSalian V, Wang Z, Curran GL, Podulso JF, Kandimalla KK. Estimation of various physiological parameters affecting amyloid plaque distribution of a novel MRI contrast agent in the brain of Alzheimer’s disease transgenic mice. Mol Pharm. 2026;23(6):3243-3253.\nWang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. QSP modeling shows pathological synergism between insulin resistance and amyloid-beta exposure in upregulating VCAM1 expression at the BBB endothelium. CPT Pharmacometrics Syst Pharmacol. 2025;14(3):561-571.\nWang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. High-density lipoprotein mimetic peptide 4F reduces toxic amyloid-beta exposure to the blood-brain barrier endothelium in Alzheimer’s disease transgenic mice. Mol Pharm. 2024;21(11):5661-5671.\nNelson D, Thompson KJ, Wang L, Wang Z, Eberts P, Azarin SM, Kalari KR, Kandimalla KK. Pericyte control of gene expression in the blood-brain barrier endothelium: implications for Alzheimer’s disease. J Alzheimers Dis. 2024;99(s2):S281-S297.\nWang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. Amyloid-beta proteins 40 and 42 employ distinct molecular pathways for cell entry and intracellular transit at the BBB endothelium. Mol Pharmacol. 2023;104(5):203-213.\nWang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. Deconvolution of plasma pharmacokinetics from dynamic heart imaging data obtained by SPECT/CT imaging. J Pharmacol Exp Ther. 2023;386(1):102-110.\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium using time-series transcriptomics data. NPJ Syst Biol Appl. 2022;8(1):29.\nWang Z, Chen D, Fan Q, Wu Z, Dong J, Cui J, Wang J, Xu T, Meng Q, Li S. Design, synthesis and in vivo fluorescence imaging study of a cytochrome P450 1B1 targeted NIR probe containing a chelator moiety. ChemBioChem. 2022:e202200268.\nTaubel JC, Nelson NR, Bansal A, Curran GL, Wang L, Wang Z, Berg HM, Vernon CJ, Min HK, Larson NB, DeGrado TR, Kandimalla KK, Lowe VJ, Pandey MK. Design, synthesis, and preliminary evaluation of [68Ga]Ga-NOTA-insulin as a PET probe in an Alzheimer’s disease mouse model. Bioconjug Chem. 2022;33(5):892-906.\nChen D, Fan Q, Xu T, Dong J, Cui J, Wang Z, Wang J, Meng Q, Li S. Design, synthesis and binding affinity evaluation of cytochrome P450 1B1 targeted chelators. Anticancer Agents Med Chem. 2022;22(2):261-269.\nWang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. Semimechanistic population pharmacokinetic modeling to investigate amyloid beta trafficking and accumulation at the BBB endothelium. Mol Pharm. 2021;18(11):4148-4161.\nSharda N, Pengo T, Wang Z, Kandimalla KK. Amyloid-beta peptides disrupt interactions between VAMP-2 and SNAP-25 in neuronal cells as determined by FRET/FLIM. J Alzheimers Dis. 2020;77(1):423-435.\nXie J, Gonzalez-Carter D, Tockary TA, Nakamura N, Xue Y, Nakakido M, Akiba H, Dirisala A, Liu X, Toh K, Yang T, Wang Z, et al. Dual-sensitive nanomicelles enhancing systemic delivery of therapeutically active antibodies specifically into the brain. ACS Nano. 2020;14(6):6729-6742.\nDong J, Wang Z, Cui J, Meng Q, Li S. Synthesis and structure-activity relationship studies of alpha-naphthoflavone derivatives as CYP1B1 inhibitors. Eur J Med Chem. 2020;187:111938.\nWang Z, Meng Q, Li S. The role of NIR fluorescence in MDR cancer treatment: from targeted imaging to phototherapy. Curr Med Chem. 2020;27(33):5510-5529.\nDong J, Huang G, Zhang Q, Wang Z, Cui J, Wu Y, Meng Q, Li S. Development of benzochalcone derivatives as selective CYP1B1 inhibitors and anticancer agents. MedChemComm. 2019;10(9):1606-1614.\nMeng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. Design, synthesis, and biological evaluation of cytochrome P450 1B1 targeted molecular imaging probes for colorectal tumor detection. J Med Chem. 2018;61(23):10901-10909.\nDong J, Zhang Q, Meng Q, Wang Z, Li S, Cui J. Development of 2-arylbenzo[h]quinolone analogs as selective CYP1B1 inhibitors. RSC Adv. 2018;8(27):15009-15020.\nDong J, Zhang Q, Wang Z, Huang G, Li S. Recent advances in the development of indazole-based anticancer agents. ChemMedChem. 2018;13(15):1490-1507.\nDong J, Zhang Q, Meng Q, Wang Z, Li S, Cui J. The chemistry and biological effects of thioflavones. Mini Rev Med Chem. 2018;18(20):1714-1732."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#conference-presentations",
+    "href": "file/Zengtao Wang_CV.html#conference-presentations",
+    "title": "Zengtao Wang",
+    "section": "CONFERENCE PRESENTATIONS",
+    "text": "CONFERENCE PRESENTATIONS\n\nWang Z, Heathman MA, Kim SJ, Miles S, Velez de Mendizabal N. MN2mrg: An open-source R Shiny application for automated translation of Monolix and NONMEM models to mrgsolve for simulation workflows. Software and tool demonstration (M-040), American Conference on Pharmacometrics (ACoP) 2026, October 12, 2026.\nWang Z, Veerareddy V (presenting author), Kandimalla KK. Gut microbial metabolites regulate bidirectional transport and accumulation of Alzheimer’s disease amyloid-beta peptides at the blood-brain barrier endothelium. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Boston, MA, 2022.\nWang Z, Tang X, Thompson KJ, Kalari KR, Kandimalla KK. Systems biology modeling of the insulin signaling network in the blood-brain barrier endothelium predicts cerebrovascular inflammation in Alzheimer’s disease. Special poster, American Association of Pharmaceutical Scientists Annual Meeting, Boston, MA, 2022.\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium and impact of amyloid-beta exposure. Poster, Barriers of the CNS Gordon Research Conference, New London, NH, 2022.\nWang Z, Curran GL, Zhong R, Lowe VJ, Li L, Kandimalla KK. High-density lipoprotein mimetic peptide 4F reduces amyloid-beta peptide accumulation in the blood-brain barrier endothelium in Alzheimer’s disease. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Orlando, FL, 2023.\nWang Z, Chen J, Yang M, Hirst WD, Dam T, Burton J. Model-based meta-analysis of MDS-UPDRS scores to improve clinical trial efficiency for Parkinson’s disease. Poster, 14th American Conference on Pharmacometrics, National Harbor, MD, 2023.\nWang Z, Wang L, Curran GL, Vernon CJ, Min PH, Lowe VJ, Kandimalla KK. Prediction of plasma pharmacokinetics from dynamic heart imaging data. Special poster, American Association of Pharmaceutical Scientists Annual Meeting, Philadelphia, PA, 2021.\nWang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium using time-series transcriptomics data. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Philadelphia, PA, 2021.\nWang Z, Zhou AL, Sharda N, Curran GL, Lowe VJ, Kandimalla KK. Semi-mechanistic pharmacokinetic model to predict the impact of age and insulin exposure on Alzheimer’s disease amyloid-beta peptide kinetics at the blood-brain barrier. Poster, American Association of Pharmaceutical Scientists Annual Meeting, virtual, 2020.\nWang Z, Tang X, Thompson KJ, Kalari KR, Kandimalla KK. Systems biology modeling of insulin signaling in the blood-brain barrier endothelium predicts cerebrovascular inflammation in Alzheimer’s disease. Poster, GPEN, University of Minnesota, 2022."
+  },
+  {
+    "objectID": "file/Zengtao Wang_CV.html#additional-training",
+    "href": "file/Zengtao Wang_CV.html#additional-training",
+    "title": "Zengtao Wang",
+    "section": "ADDITIONAL TRAINING",
+    "text": "ADDITIONAL TRAINING\nMonoclonal Antibody PK/PD Workshop, SUNY Buffalo (May 2022) | MonolixSuite Pharmacometrics Spring School, Lixoft (March 2022)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zengtao Wang",
+    "section": "",
+    "text": "Hi there! My name is Zengtao Wang and I am a pharmacometrician working at Eli Lilly and Company. I am a PKPD scientist by training and I am passionate about applying quantitative modeling and simulation to drug development.\n\n\nUniversity of Minnesota, Twin Cities | Minneapolis, MN\nPhD in Pharmaceutics | Sept 2019 - May 2024\nShanghai Jiao Tong University | Shanghai, China\nB.S in Pharmacy | Sept 2015 - June 2019\n\n\n\nEli Lilly and Company | Indianapolis, IN\nSr. Advisor - Pharmacometrician | Sept 2026 - present\n\n\n\nI lead pharmacometrics support for neuroscience and diabetes clinical development, applying model-informed drug development to study design, simulation, and regulatory decisions. I also build workflow-automation tools and explore AI-augmented approaches for pharmacometrics.\n\n\n\n\nPopulation PK/PD, nonlinear mixed-effects modeling, model-based meta-analysis, time-to-event modeling, and quantitative systems pharmacology\nClinical trial simulation and model-informed drug development\nNONMEM, Monolix, MATLAB/SimBiology, R, mrgsolve, Phoenix WinNonlin, SAAM II, and Stella Architect"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Zengtao Wang",
+    "section": "",
+    "text": "University of Minnesota, Twin Cities | Minneapolis, MN\nPhD in Pharmaceutics | Sept 2019 - May 2024\nShanghai Jiao Tong University | Shanghai, China\nB.S in Pharmacy | Sept 2015 - June 2019"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Zengtao Wang",
+    "section": "",
+    "text": "Eli Lilly and Company | Indianapolis, IN\nSr. Advisor - Pharmacometrician | Sept 2026 - present"
+  },
+  {
+    "objectID": "index.html#current-focus",
+    "href": "index.html#current-focus",
+    "title": "Zengtao Wang",
+    "section": "",
+    "text": "I lead pharmacometrics support for neuroscience and diabetes clinical development, applying model-informed drug development to study design, simulation, and regulatory decisions. I also build workflow-automation tools and explore AI-augmented approaches for pharmacometrics."
+  },
+  {
+    "objectID": "index.html#expertise",
+    "href": "index.html#expertise",
+    "title": "Zengtao Wang",
+    "section": "",
+    "text": "Population PK/PD, nonlinear mixed-effects modeling, model-based meta-analysis, time-to-event modeling, and quantitative systems pharmacology\nClinical trial simulation and model-informed drug development\nNONMEM, Monolix, MATLAB/SimBiology, R, mrgsolve, Phoenix WinNonlin, SAAM II, and Stella Architect"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

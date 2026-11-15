@@ -6,6 +6,8 @@
 .quarto
 
 /.quarto/
+/.tools/
+/.tools/
 
 **/*.quarto_ipynb
 

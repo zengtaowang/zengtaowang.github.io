@@ -2,9 +2,6 @@
 title: "Zengtao Wang"
 subtitle: "PHARMACOMETRICS  |  QUANTITATIVE CLINICAL PHARMACOLOGY"
 format:
-  docx:
-    reference-doc: Zengtao_Wang_CV_reference.docx
-    toc: false
   html:
     css: Zengtao_Wang_CV.css
     toc: false
@@ -22,7 +19,7 @@ format:
 lang: en-US
 ---
 
-Indianapolis, Indiana  |  651-424-6529  |  [zntao.wang@gmail.com](mailto:zntao.wang@gmail.com)  |  [LinkedIn](https://www.linkedin.com/in/zengtao-wang)  |  [Google Scholar](https://scholar.google.com/citations?hl=en&user=4mJXDH4AAAAJ)  |  [GitHub](https://github.com/zengtaowang)  |  [Personal website](https://zengtaowang.github.io)
+Indianapolis, Indiana  |  [zntao.wang@gmail.com](mailto:zntao.wang@gmail.com)  |  [LinkedIn](https://www.linkedin.com/in/zengtaowang)  |  [Google Scholar](https://scholar.google.com/citations?hl=en&user=4mJXDH4AAAAJ)  |  [GitHub](https://github.com/zengtaowang)  |  [Personal website](https://zengtaowang.github.io)
 
 ## PROFESSIONAL PROFILE
 
