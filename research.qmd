@@ -7,13 +7,21 @@ format:
     smooth-scroll: true
 ---
 
-## 📈 Pharmacometrics in metablolic and neuroscience therapeutic areas
+## 📈 Pharmacometrics in metabolic and neuroscience therapeutic areas
 
 **Sr. Advisor - Pharmacometrician, Eli Lilly and Company (Sep 2026 - Present)**\
 Global PK/PD/PMx department\
 *Supervisor: Dr. Nieves Velez de Mendizabal*
 
 My current research at Eli Lilly and Company focuses on the development and application of quantitative pharmacology and pharmacometrics to support drug development in metabolic and neuroscience therapeutic areas.
+
+### Selected Recognition and Presentations
+
+- Emerson Award, Eli Lilly and Company, ATPLV-HSE organization
+- Lilly Innovator Award, 2024
+- Doctoral Dissertation Fellowship, University of Minnesota, 2023
+- **MN2mrg: an open-source R Shiny application for automated translation of Monolix and NONMEM models to mrgsolve for simulation workflows.** Software and tool demonstration, ACoP 2026.
+- **Model-based meta-analysis of MDS-UPDRS scores to improve clinical trial efficiency for Parkinson's disease.** Poster, ACoP14, 2023.
 
 ## 🧠 Alzheimer's Disease & Type 2 Diabetes & Blood-Brain Barrier Dysfunction
 

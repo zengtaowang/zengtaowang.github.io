@@ -8,9 +8,24 @@ format:
 
 ## Selected Publications
 
+### **Estimation of Various Physiological Parameters Affecting Amyloid Plaque Distribution of a Novel MRI Contrast Agent in the Brain of Alzheimer's Disease Transgenic Mice.**
+
+Salian V, Wang Z, Curran GL, Podulso JF, Kandimalla KK. (2026)\
+*Mol Pharm.* 23(6):3243-3253.\
+[DOI: 10.1021/acs.molpharmaceut.5c01565](https://pubs.acs.org/doi/10.1021/acs.molpharmaceut.5c01565)
+
+------------------------------------------------------------------------
+
+### **Endothelial-pericyte interactions activate insulin signaling and its implications for blood-brain barrier dysfunction in Alzheimer's disease.**
+
+Wang Z, Veerareddy V, Eberts PM, Azarin SM, Kandimalla KK. (2025)\
+*bioRxiv* [preprint; not peer-reviewed]
+
+------------------------------------------------------------------------
+
 ### **QSP Modeling Shows Pathological Synergism Between Insulin Resistance and Amyloid-Beta Exposure in Upregulating VCAM1 Expression at the BBB Endothelium.**
 
-Wang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2024)\
+Wang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. (2025)\
 *CPT Pharmacometrics Syst Pharmacol.*\
 [DOI: 10.1002/psp4.13296](https://ascpt.onlinelibrary.wiley.com/doi/full/10.1002/psp4.13296)
 
@@ -44,7 +59,7 @@ Wang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kand
 
 Wang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\
 *NPJ Syst Biol Appl.*\
-[DOI: 10.1038/s41540-022-00288-0](https://www.nature.com/articles/s41540-022-00235-8)
+[DOI: 10.1038/s41540-022-00235-8](https://www.nature.com/articles/s41540-022-00235-8)
 
 ------------------------------------------------------------------------
 
@@ -52,7 +67,7 @@ Wang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. (2022)\
 
 Wang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. (2021)\
 *Mol Pharm.*\
-[DOI: 10.1021/acs.jmedchem.8b01633](https://pubs.acs.org/doi/10.1021/acs.jmedchem.8b01633)
+[DOI: 10.1021/acs.molpharmaceut.1c00549](https://pubs.acs.org/doi/10.1021/acs.molpharmaceut.1c00549)
 
 ------------------------------------------------------------------------
 

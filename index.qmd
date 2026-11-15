@@ -23,7 +23,7 @@ Hi there! My name is Zengtao Wang and I am a pharmacometrician working at Eli Li
 
 **University of Minnesota, Twin Cities** \| Minneapolis, MN
 
-PhD in Pharmaceutics \| Sept 2019 - June 2024
+PhD in Pharmaceutics \| Sept 2019 - May 2024
 
 **Shanghai Jiao Tong University** \| Shanghai, China
 
@@ -34,4 +34,14 @@ B.S in Pharmacy \| Sept 2015 - June 2019
 **Eli Lilly and Company** \| Indianapolis, IN
 
 Sr. Advisor - Pharmacometrician \| Sept 2026 - present
+
+## Current Focus
+
+I lead pharmacometrics support for neuroscience and diabetes clinical development, applying model-informed drug development to study design, simulation, and regulatory decisions. I also build workflow-automation tools and explore AI-augmented approaches for pharmacometrics.
+
+## Expertise
+
+- Population PK/PD, nonlinear mixed-effects modeling, model-based meta-analysis, time-to-event modeling, and quantitative systems pharmacology
+- Clinical trial simulation and model-informed drug development
+- NONMEM, Monolix, MATLAB/SimBiology, R, mrgsolve, Phoenix WinNonlin, SAAM II, and Stella Architect
 :::
