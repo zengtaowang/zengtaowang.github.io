@@ -1,0 +1,410 @@
+---
+title: "Where does clearance happen? A two-compartment AUC thought experiment"
+description: "A mrgsolve experiment showing why plasma AUC depends on the compartment from which drug is eliminated."
+date: "2026-11-15"
+categories: [Pharmacometrics, PK, mrgsolve, Modeling and Simulation]
+draft: false
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+The familiar intravenous (IV) pharmacokinetic identity is
+
+$$
+\mathrm{AUC}_{\mathrm{plasma}} = \frac{\mathrm{Dose}}{CL}.
+$$
+
+It is easy to remember, but it also hides an assumption: the clearance is defined with respect to the plasma (central-compartment) concentration. What happens if drug is eliminated from a peripheral compartment instead? And what does plasma AUC mean when elimination occurs from both compartments?
+
+This post uses a deliberately simple linear two-compartment model to make that assumption visible. This is a mathematical teaching example, not a proposed physiologic model for a particular drug.
+
+## Model diagram
+
+```{=html}
+<figure style="max-width: 760px; margin: 1.5rem auto;">
+<svg viewBox="0 0 760 340" role="img" aria-labelledby="model-diagram-title model-diagram-desc" style="width: 100%; height: auto; font-family: sans-serif;">
+  <title id="model-diagram-title">Two-compartment model with central and peripheral elimination</title>
+  <desc id="model-diagram-desc">An IV dose enters the central compartment. Drug distributes in both directions between central and peripheral compartments through Q. Elimination can occur from central through CLc times C1 and from peripheral through CLp times C2.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0072B2"/></marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#D55E00"/></marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#52616d"/></marker>
+  </defs>
+  <rect x="75" y="100" width="225" height="115" rx="10" fill="#eaf4fb" stroke="#0072B2" stroke-width="2"/>
+  <text x="187" y="143" text-anchor="middle" font-size="21" font-weight="700" fill="#173c55">Central compartment</text>
+  <text x="187" y="174" text-anchor="middle" font-size="18" fill="#173c55">V₁, C₁ = A₁/V₁</text>
+  <rect x="460" y="100" width="225" height="115" rx="10" fill="#fff1e8" stroke="#D55E00" stroke-width="2"/>
+  <text x="572" y="143" text-anchor="middle" font-size="21" font-weight="700" fill="#71370d">Peripheral compartment</text>
+  <text x="572" y="174" text-anchor="middle" font-size="18" fill="#71370d">V₂, C₂ = A₂/V₂</text>
+  <path d="M300 130 H455" fill="none" stroke="#52616d" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+  <path d="M460 185 H305" fill="none" stroke="#52616d" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+  <text x="380" y="118" text-anchor="middle" font-size="17" fill="#37444e">Q × C₁</text>
+  <text x="380" y="207" text-anchor="middle" font-size="17" fill="#37444e">Q × C₂</text>
+  <path d="M187 45 V95" fill="none" stroke="#0072B2" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="187" y="35" text-anchor="middle" font-size="18" font-weight="700" fill="#0072B2">IV dose</text>
+  <path d="M187 220 V292" fill="none" stroke="#0072B2" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="187" y="324" text-anchor="middle" font-size="18" fill="#0072B2">Central elimination: CLc × C₁</text>
+  <path d="M572 220 V292" fill="none" stroke="#D55E00" stroke-width="3" marker-end="url(#arrow-orange)"/>
+  <text x="572" y="324" text-anchor="middle" font-size="18" fill="#D55E00">Peripheral elimination: CLp × C₂</text>
+</svg>
+<figcaption style="text-align: center; color: #58636f; font-size: .9rem; margin-top: .25rem;">A two-compartment IV model in which elimination may occur from either compartment.</figcaption>
+</figure>
+```
+
+## The model
+
+Let $V_1$ and $V_2$ be central and peripheral volumes, $Q$ the intercompartmental clearance, $CL_c$ clearance from the central compartment, and $CL_p$ clearance from the peripheral compartment. The model is
+
+$$
+\begin{aligned}
+\frac{dA_1}{dt} &= -\left(\frac{CL_c}{V_1} + \frac{Q}{V_1}\right)A_1
+                  + \frac{Q}{V_2}A_2, \\
+\frac{dA_2}{dt} &= \frac{Q}{V_1}A_1
+                  - \left(\frac{Q}{V_2} + \frac{CL_p}{V_2}\right)A_2,
+\end{aligned}
+$$
+
+where plasma concentration is $C_1=A_1/V_1$. An IV bolus dose enters $A_1$. Here, $CL_c C_1$ and $CL_p C_2$ are elimination rates; in particular, $CL_p$ is *not* automatically a clearance referenced to plasma concentration.
+
+## A result before simulating
+
+For a complete concentration-time profile, integrate the *amount* balances from time zero to infinity. Let $AUC_1=\int_0^\infty C_1(t)dt$ and $AUC_2=\int_0^\infty C_2(t)dt$. Because the peripheral compartment starts empty and eventually returns to zero amount, its net change in amount is zero:
+
+$$
+\underbrace{0}_{A_2(\infty)-A_2(0)} =
+\underbrace{Q AUC_1}_{\text{distribution into peripheral}}
+- \underbrace{Q AUC_2}_{\text{distribution back to central}}
+- \underbrace{CL_p AUC_2}_{\text{peripheral elimination}}.
+$$
+
+Rearranging gives
+
+$$
+Q(AUC_1-AUC_2)=CL_p AUC_2.
+$$
+
+In words: over the whole profile, the **net** amount distributed into the peripheral compartment must be exactly the amount eliminated there.
+
+The central compartment starts with the IV dose and also ends at zero. Integrating its amount balance makes the dose term explicit:
+
+$$
+\begin{aligned}
+\underbrace{A_1(\infty)-A_1(0)}_{0-\mathrm{Dose}}
+&= \int_0^\infty \frac{dA_1}{dt}\,dt \\
+&= -CL_c AUC_1 - Q(AUC_1-AUC_2).
+\end{aligned}
+$$
+
+Multiplying both sides by $-1$ gives
+
+$$
+\mathrm{Dose}=CL_c AUC_1 + Q(AUC_1-AUC_2).
+$$
+
+Substituting the peripheral balance into that equation gives the equivalent whole-body statement: every unit of dose was ultimately eliminated either from central or peripheral,
+
+$$
+\mathrm{Dose}=CL_c AUC_1+CL_p AUC_2.
+$$
+
+Finally, solve the peripheral balance first:
+
+$$
+AUC_2 = \frac{Q}{Q+CL_p}AUC_1.
+$$
+
+Substitute this into the whole-body balance and solve for the plasma (central) AUC:
+
+$$
+\boxed{AUC_1 =
+\frac{\mathrm{Dose}}
+{CL_c+\frac{QCL_p}{Q+CL_p}}}.
+$$
+
+Thus, the apparent clearance inferred from plasma AUC is
+
+$$
+CL_{\mathrm{app,plasma}} = CL_c+\frac{QCL_p}{Q+CL_p}.
+$$
+
+Peripheral elimination only contributes $QCL_p/(Q+CL_p)$ to plasma apparent clearance. It is limited by distribution to the peripheral compartment.
+
+For example, if $Q=5$ and $CL_p=10$, then $AUC_2=(5/(5+10))AUC_1=AUC_1/3$. If there is no central elimination and the dose is 100, peripheral elimination requires $10\times AUC_2=100$; hence $AUC_2=10$ and $AUC_1=30$. The larger central AUC reflects the extra time needed for drug to reach the peripheral elimination site.
+
+## Simulate the three cases with `mrgsolve`
+
+```{r}
+library(mrgsolve)
+
+code <- '
+$PARAM V1 = 10, V2 = 20, Q = 5, CLc = 0, CLp = 0
+$CMT CENT PERI
+$ODE
+dxdt_CENT = -(CLc/V1 + Q/V1)*CENT + (Q/V2)*PERI;
+dxdt_PERI =  (Q/V1)*CENT - (Q/V2 + CLp/V2)*PERI;
+$TABLE
+double CP = CENT/V1;
+$CAPTURE CP
+'
+
+mod <- mcode("peripheral_clearance", code)
+dose <- 100
+
+# A fine grid and a long horizon make trapezoidal AUC essentially complete.
+sim_one <- function(CLc, CLp, Q = 5, end = 120, delta = 0.01) {
+  out <- mrgsim(
+    mod,
+    events = ev(amt = dose, cmt = 1),
+    end = end,
+    delta = delta,
+    recsort = 3,
+    param = list(CLc = CLc, CLp = CLp, Q = Q)
+  )
+  out <- as.data.frame(out)
+  auc <- sum(diff(out$time) * (head(out$CP, -1) + tail(out$CP, -1)) / 2)
+  data.frame(time = out$time, CP = out$CP, AUC_numeric = auc)
+}
+
+scenarios <- data.frame(
+  scenario = c("Central elimination only", "Peripheral elimination only", "Elimination from both"),
+  CLc = c(10, 0, 5),
+  CLp = c(0, 10, 10)
+)
+
+simulations <- lapply(seq_len(nrow(scenarios)), function(i) {
+  x <- sim_one(scenarios$CLc[i], scenarios$CLp[i])
+  x$scenario <- scenarios$scenario[i]
+  x
+})
+names(simulations) <- scenarios$scenario
+```
+
+```{r}
+Q <- 5
+results <- scenarios
+results$CL_app_plasma <- with(results, CLc + Q * CLp / (Q + CLp))
+results$AUC_analytic <- dose / results$CL_app_plasma
+results$AUC_numeric <- vapply(simulations, function(x) x$AUC_numeric[1], numeric(1))
+results$relative_error_pct <- 100 *
+  (results$AUC_numeric - results$AUC_analytic) / results$AUC_analytic
+
+knitr::kable(
+  transform(
+    results,
+    AUC_analytic = round(AUC_analytic, 3),
+    AUC_numeric = round(AUC_numeric, 3),
+    relative_error_pct = round(relative_error_pct, 3)
+  ),
+  col.names = c(
+    "Scenario", "CL central", "CL peripheral", "Apparent plasma CL",
+    "Analytic AUC", "Simulated AUC", "Relative error (%)"
+  ),
+  caption = "Analytic and simulated central AUC after a 100-unit IV bolus."
+)
+```
+
+```{r, fig.width=10, fig.height=9, fig.alt="Central concentration-time curves for the three clearance scenarios on linear and logarithmic concentration scales"}
+cols <- c("Central elimination only" = "#0072B2",
+          "Peripheral elimination only" = "#D55E00",
+          "Elimination from both" = "#009E73")
+
+old_par <- par(no.readonly = TRUE)
+par(mfrow = c(2, 1), mar = c(4.2, 4.8, 2.8, 1.2))
+
+plot(
+  NA, xlim = c(0, 24), ylim = c(0, dose / 10),
+  xlab = "Time", ylab = expression("Central concentration, " * C[1]),
+  main = "Linear scale"
+)
+for (name in names(simulations)) {
+  x <- simulations[[name]]
+  lines(x$time, x$CP, col = cols[name], lwd = 2)
+}
+legend("topright", legend = names(cols), col = cols, lwd = 2, bty = "n")
+
+plot(
+  NA, xlim = c(0, 24), ylim = c(1e-4, dose / 10), log = "y",
+  xlab = "Time", ylab = expression("Central concentration, " * C[1]),
+  main = "Semi-log scale"
+)
+for (name in names(simulations)) {
+  x <- simulations[[name]]
+  lines(x$time, pmax(x$CP, 1e-4), col = cols[name], lwd = 2)
+}
+par(old_par)
+```
+
+The numerical AUCs agree with the analytic result up to the small error from finite simulation time and trapezoidal integration. The semi-log panel makes the terminal slopes easier to compare: moving the elimination site changes not only plasma AUC, but also the shape of the plasma concentration-time curve. The central-only case returns the usual $100/10=10$. With peripheral-only elimination, however,
+
+$$
+AUC_1 = \frac{\mathrm{Dose}}{CL_p}\left(1+\frac{CL_p}{Q}\right).
+$$
+
+For this example, $CL_p=10$ and $Q=5$, so central AUC is 30 rather than 10. The drug has to distribute to the peripheral compartment before it can be cleared.
+
+## Distribution can become the bottleneck
+
+Holding peripheral clearance at $CL_p=10$, the next simulation changes $Q$. The contribution of peripheral elimination to apparent plasma clearance cannot exceed $Q$: when peripheral elimination is very fast, distribution becomes the rate-limiting step.
+
+```{r, fig.width=8, fig.height=5, fig.alt="Apparent plasma clearance rises with intercompartmental clearance and approaches peripheral clearance"}
+q_grid <- exp(seq(log(0.05), log(200), length.out = 200))
+clp <- 10
+cl_app <- q_grid * clp / (q_grid + clp)
+
+plot(
+  q_grid, cl_app, log = "x", type = "l", lwd = 2, col = "#D55E00",
+  xlab = expression("Intercompartmental clearance, " * Q),
+  ylab = expression("Peripheral contribution to " * CL["app,plasma"]),
+  main = expression("Peripheral clearance is filtered through " * Q)
+)
+abline(h = clp, lty = 2, col = "grey40")
+text(0.07, 9.4, labels = expression(CL[p] == 10), pos = 4, col = "grey30")
+```
+
+## Try it yourself: change $Q$
+
+In this interactive sensitivity analysis, central clearance is held at $CL_c=5$ and peripheral clearance at $CL_p=10$. Drag the slider to change $Q$. The profile is solved in your browser from the same two-compartment equations used above; no software or data leave your device.
+
+```{=html}
+<div id="q-explorer" class="q-explorer">
+  <div class="q-explorer__controls">
+    <label for="q-slider"><strong>Intercompartmental clearance, Q</strong><br>
+      <input id="q-slider" type="range" min="-2" max="2.3" value="0.699" step="0.01" aria-describedby="q-help">
+    </label>
+    <p id="q-help" class="q-explorer__hint">The slider is logarithmic so that both very low and very high Q values are visible.</p>
+    <p class="q-explorer__value">Q = <output id="q-value" for="q-slider">5.00</output></p>
+    <label class="q-explorer__toggle"><input id="log-scale-toggle" type="checkbox"> Log-scale concentration axis</label>
+  </div>
+  <div class="q-explorer__metrics" aria-live="polite">
+    <div><span>Apparent plasma clearance</span><strong id="cl-app-value"></strong></div>
+    <div><span>Central AUC<sub>0–∞</sub></span><strong id="auc-value"></strong></div>
+    <div><span>Peripheral contribution</span><strong id="clp-contribution"></strong></div>
+  </div>
+  <div class="q-explorer__chart">
+    <canvas id="q-profile-canvas" role="img" aria-label="Central concentration-time profile after a 100-unit IV bolus"></canvas>
+  </div>
+  <p class="q-explorer__caption">Fixed values: dose = 100, V<sub>1</sub> = 10, V<sub>2</sub> = 20, CL<sub>c</sub> = 5, and CL<sub>p</sub> = 10. Units are intentionally generic.</p>
+</div>
+
+<style>
+.q-explorer { margin: 1.5rem 0; padding: 1.25rem; border: 1px solid #d8dee4; border-radius: .5rem; background: #f8fafc; }
+.q-explorer__controls { max-width: 42rem; }
+.q-explorer input { width: min(100%, 34rem); margin-top: .5rem; accent-color: #0072B2; }
+.q-explorer__hint, .q-explorer__caption { color: #58636f; font-size: .9rem; }
+.q-explorer__value { font-size: 1.15rem; margin: .75rem 0 0; }
+.q-explorer__toggle { display: inline-flex; align-items: center; gap: .4rem; margin-top: .65rem; cursor: pointer; }
+.q-explorer__toggle input { width: auto; margin: 0; }
+.q-explorer__metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1rem 0; }
+.q-explorer__metrics div { padding: .8rem; border-radius: .35rem; background: white; border: 1px solid #e4e8ec; }
+.q-explorer__metrics span, .q-explorer__metrics strong { display: block; }
+.q-explorer__metrics span { color: #58636f; font-size: .84rem; }
+.q-explorer__metrics strong { font-size: 1.15rem; margin-top: .2rem; }
+.q-explorer__chart { height: 320px; background: white; border: 1px solid #e4e8ec; }
+.q-explorer__chart canvas { width: 100%; height: 100%; }
+@media (max-width: 600px) { .q-explorer__metrics { grid-template-columns: 1fr; } .q-explorer__chart { height: 260px; } }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("q-explorer");
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = "true";
+
+  const slider = root.querySelector("#q-slider");
+  const logScaleToggle = root.querySelector("#log-scale-toggle");
+  const qValue = root.querySelector("#q-value");
+  const clAppValue = root.querySelector("#cl-app-value");
+  const aucValue = root.querySelector("#auc-value");
+  const contributionValue = root.querySelector("#clp-contribution");
+  const canvas = root.querySelector("#q-profile-canvas");
+  const context = canvas.getContext("2d");
+  const dose = 100, V1 = 10, V2 = 20, CLc = 5, CLp = 10;
+
+  function derivatives(a1, a2, Q) {
+    return [-(CLc / V1 + Q / V1) * a1 + (Q / V2) * a2,
+      (Q / V1) * a1 - (Q / V2 + CLp / V2) * a2];
+  }
+
+  function profile(Q) {
+    const dt = 0.02, end = 24, values = [];
+    let a1 = dose, a2 = 0;
+    for (let t = 0; t <= end; t += dt) {
+      values.push([t, a1 / V1]);
+      const k1 = derivatives(a1, a2, Q);
+      const k2 = derivatives(a1 + dt * k1[0] / 2, a2 + dt * k1[1] / 2, Q);
+      const k3 = derivatives(a1 + dt * k2[0] / 2, a2 + dt * k2[1] / 2, Q);
+      const k4 = derivatives(a1 + dt * k3[0], a2 + dt * k3[1], Q);
+      a1 += dt * (k1[0] + 2 * k2[0] + 2 * k3[0] + k4[0]) / 6;
+      a2 += dt * (k1[1] + 2 * k2[1] + 2 * k3[1] + k4[1]) / 6;
+    }
+    return values;
+  }
+
+  function draw(values, logScale) {
+    const dpr = window.devicePixelRatio || 1;
+    const width = canvas.clientWidth, height = canvas.clientHeight;
+    canvas.width = width * dpr; canvas.height = height * dpr;
+    context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const left = 56, right = 18, top = 20, bottom = 42;
+    const plotW = width - left - right, plotH = height - top - bottom;
+    const maxY = Math.max(1, ...values.map(d => d[1])) * 1.12;
+    const minY = 0.001;
+    const logMin = Math.log10(minY), logMax = Math.log10(maxY);
+    const yPosition = y => logScale
+      ? height - bottom - ((Math.log10(Math.max(y, minY)) - logMin) / (logMax - logMin)) * plotH
+      : height - bottom - (y / maxY) * plotH;
+    context.clearRect(0, 0, width, height);
+    context.strokeStyle = "#cbd5df"; context.lineWidth = 1;
+    context.beginPath(); context.moveTo(left, top); context.lineTo(left, height - bottom); context.lineTo(width - right, height - bottom); context.stroke();
+    context.fillStyle = "#43515e"; context.font = "12px sans-serif";
+    const ticks = logScale
+      ? Array.from({length: Math.floor(logMax) - Math.ceil(logMin) + 1}, (_, i) => 10 ** (Math.ceil(logMin) + i))
+      : [0, maxY / 2, maxY];
+    ticks.forEach(y => {
+      const py = yPosition(y);
+      context.strokeStyle = "#e7edf2"; context.beginPath(); context.moveTo(left, py); context.lineTo(width - right, py); context.stroke();
+      context.fillText(logScale ? y.toExponential(0) : y.toFixed(1), 5, py + 4);
+    });
+    [0, 6, 12, 18, 24].forEach(t => {
+      const px = left + (t / 24) * plotW;
+      context.fillText(t, px - 4, height - bottom + 18);
+    });
+    context.fillText("Time", width / 2 - 12, height - 8);
+    context.save(); context.translate(14, height / 2 + 35); context.rotate(-Math.PI / 2); context.fillText("Central concentration", 0, 0); context.restore();
+    context.strokeStyle = "#0072B2"; context.lineWidth = 2.5; context.beginPath();
+    values.forEach(([t, c], i) => {
+      const px = left + (t / 24) * plotW;
+      const py = yPosition(c);
+      i ? context.lineTo(px, py) : context.moveTo(px, py);
+    });
+    context.stroke();
+  }
+
+  function update() {
+    const Q = 10 ** Number(slider.value);
+    const peripheralContribution = Q * CLp / (Q + CLp);
+    const clApp = CLc + peripheralContribution;
+    qValue.textContent = Q.toFixed(Q < 0.1 ? 3 : 2);
+    clAppValue.textContent = clApp.toFixed(2);
+    aucValue.textContent = (dose / clApp).toFixed(2);
+    contributionValue.textContent = peripheralContribution.toFixed(2);
+    draw(profile(Q), logScaleToggle.checked);
+  }
+  slider.addEventListener("input", update);
+  logScaleToggle.addEventListener("change", update);
+  window.addEventListener("resize", update);
+  update();
+})();
+</script>
+```
+
+## Take-home messages
+
+- The IV identity $AUC=\mathrm{Dose}/CL$ remains correct only after defining which concentration the clearance is referenced to.
+- If clearance is driven by peripheral concentration, plasma AUC is governed by $QCL_p/(Q+CL_p)$, not simply by $CL_p$.
+- With clearance from both compartments, plasma apparent clearance is $CL_c+QCL_p/(Q+CL_p)$.
+- Calling the sum $CL_c+CL_p$ “total clearance” can be misleading when the terms are referenced to different compartment concentrations.
+
+These results assume linear, time-invariant kinetics, an IV dose into the central compartment, and AUC extrapolated to infinity. Real models may include nonlinear elimination, additional compartments, tissue-specific binding, or more physiologic blood-flow structure; the same principle still applies: always state the concentration that defines a clearance parameter.

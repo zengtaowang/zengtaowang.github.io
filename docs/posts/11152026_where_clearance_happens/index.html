@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Zengtao Wang">
+<meta name="dcterms.date" content="2026-11-15">
+<meta name="description" content="A mrgsolve experiment showing why plasma AUC depends on the compartment from which drug is eliminated.">
+
+<title>Where does clearance happen? A two-compartment AUC thought experiment – Zengtao Wang</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d31a0c91b01e363be7b7a36e602e2c70.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-68ffe45e66e65aaa3f585b3b079f1ead.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d31a0c91b01e363be7b7a36e602e2c70.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
+        setTimeout(() => {
+          window.scrollTo(0, scrollY);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Zengtao Wang</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../file/Zengtao Wang_CV.pdf"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Personal.html"> 
+<span class="menu-text">Personal Life</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Where does clearance happen? A two-compartment AUC thought experiment</h1>
+                  <div>
+        <div class="description">
+          A mrgsolve experiment showing why plasma AUC depends on the compartment from which drug is eliminated.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Pharmacometrics</div>
+                <div class="quarto-category">PK</div>
+                <div class="quarto-category">mrgsolve</div>
+                <div class="quarto-category">Modeling and Simulation</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author column-page-left">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://zengtaowang.github.io/">Zengtao Wang</a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Eli Lilly and Company
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta column-page-left">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 15, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#model-diagram" id="toc-model-diagram" class="nav-link active" data-scroll-target="#model-diagram">Model diagram</a></li>
+  <li><a href="#the-model" id="toc-the-model" class="nav-link" data-scroll-target="#the-model">The model</a></li>
+  <li><a href="#a-result-before-simulating" id="toc-a-result-before-simulating" class="nav-link" data-scroll-target="#a-result-before-simulating">A result before simulating</a></li>
+  <li><a href="#simulate-the-three-cases-with-mrgsolve" id="toc-simulate-the-three-cases-with-mrgsolve" class="nav-link" data-scroll-target="#simulate-the-three-cases-with-mrgsolve">Simulate the three cases with <code>mrgsolve</code></a></li>
+  <li><a href="#distribution-can-become-the-bottleneck" id="toc-distribution-can-become-the-bottleneck" class="nav-link" data-scroll-target="#distribution-can-become-the-bottleneck">Distribution can become the bottleneck</a></li>
+  <li><a href="#try-it-yourself-change-q" id="toc-try-it-yourself-change-q" class="nav-link" data-scroll-target="#try-it-yourself-change-q">Try it yourself: change <span class="math inline">\(Q\)</span></a></li>
+  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages">Take-home messages</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content" tabindex="-1">
+
+
+
+
+
+
+<p>The familiar intravenous (IV) pharmacokinetic identity is</p>
+<p><span class="math display">\[
+\mathrm{AUC}_{\mathrm{plasma}} = \frac{\mathrm{Dose}}{CL}.
+\]</span></p>
+<p>It is easy to remember, but it also hides an assumption: the clearance is defined with respect to the plasma (central-compartment) concentration. What happens if drug is eliminated from a peripheral compartment instead? And what does plasma AUC mean when elimination occurs from both compartments?</p>
+<p>This post uses a deliberately simple linear two-compartment model to make that assumption visible. This is a mathematical teaching example, not a proposed physiologic model for a particular drug.</p>
+<section id="model-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="model-diagram">Model diagram</h2>
+<figure style="max-width: 760px; margin: 1.5rem auto;" class="figure">
+<svg viewbox="0 0 760 340" role="img" aria-labelledby="model-diagram-title model-diagram-desc" style="width: 100%; height: auto; font-family: sans-serif;">
+  <title id="model-diagram-title">Two-compartment model with central and peripheral elimination</title>
+  <desc id="model-diagram-desc">An IV dose enters the central compartment. Drug distributes in both directions between central and peripheral compartments through Q. Elimination can occur from central through CLc times C1 and from peripheral through CLp times C2.</desc>
+  <defs>
+    <marker id="arrow-blue" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#0072B2"></path></marker>
+    <marker id="arrow-orange" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#D55E00"></path></marker>
+    <marker id="arrow-gray" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#52616d"></path></marker>
+  </defs>
+  <rect x="75" y="100" width="225" height="115" rx="10" fill="#eaf4fb" stroke="#0072B2" stroke-width="2"></rect>
+  <text x="187" y="143" text-anchor="middle" font-size="21" font-weight="700" fill="#173c55">Central compartment</text>
+  <text x="187" y="174" text-anchor="middle" font-size="18" fill="#173c55">V₁, C₁ = A₁/V₁</text>
+  <rect x="460" y="100" width="225" height="115" rx="10" fill="#fff1e8" stroke="#D55E00" stroke-width="2"></rect>
+  <text x="572" y="143" text-anchor="middle" font-size="21" font-weight="700" fill="#71370d">Peripheral compartment</text>
+  <text x="572" y="174" text-anchor="middle" font-size="18" fill="#71370d">V₂, C₂ = A₂/V₂</text>
+  <path d="M300 130 H455" fill="none" stroke="#52616d" stroke-width="2.5" marker-end="url(#arrow-gray)"></path>
+  <path d="M460 185 H305" fill="none" stroke="#52616d" stroke-width="2.5" marker-end="url(#arrow-gray)"></path>
+  <text x="380" y="118" text-anchor="middle" font-size="17" fill="#37444e">Q × C₁</text>
+  <text x="380" y="207" text-anchor="middle" font-size="17" fill="#37444e">Q × C₂</text>
+  <path d="M187 45 V95" fill="none" stroke="#0072B2" stroke-width="3" marker-end="url(#arrow-blue)"></path>
+  <text x="187" y="35" text-anchor="middle" font-size="18" font-weight="700" fill="#0072B2">IV dose</text>
+  <path d="M187 220 V292" fill="none" stroke="#0072B2" stroke-width="3" marker-end="url(#arrow-blue)"></path>
+  <text x="187" y="324" text-anchor="middle" font-size="18" fill="#0072B2">Central elimination: CLc × C₁</text>
+  <path d="M572 220 V292" fill="none" stroke="#D55E00" stroke-width="3" marker-end="url(#arrow-orange)"></path>
+  <text x="572" y="324" text-anchor="middle" font-size="18" fill="#D55E00">Peripheral elimination: CLp × C₂</text>
+</svg>
+<figcaption style="text-align: center; color: #58636f; font-size: .9rem; margin-top: .25rem;">A two-compartment IV model in which elimination may occur from either compartment.</figcaption>
+</figure>
+</section>
+<section id="the-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-model">The model</h2>
+<p>Let <span class="math inline">\(V_1\)</span> and <span class="math inline">\(V_2\)</span> be central and peripheral volumes, <span class="math inline">\(Q\)</span> the intercompartmental clearance, <span class="math inline">\(CL_c\)</span> clearance from the central compartment, and <span class="math inline">\(CL_p\)</span> clearance from the peripheral compartment. The model is</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{dA_1}{dt} &amp;= -\left(\frac{CL_c}{V_1} + \frac{Q}{V_1}\right)A_1
+                  + \frac{Q}{V_2}A_2, \\
+\frac{dA_2}{dt} &amp;= \frac{Q}{V_1}A_1
+                  - \left(\frac{Q}{V_2} + \frac{CL_p}{V_2}\right)A_2,
+\end{aligned}
+\]</span></p>
+<p>where plasma concentration is <span class="math inline">\(C_1=A_1/V_1\)</span>. An IV bolus dose enters <span class="math inline">\(A_1\)</span>. Here, <span class="math inline">\(CL_c C_1\)</span> and <span class="math inline">\(CL_p C_2\)</span> are elimination rates; in particular, <span class="math inline">\(CL_p\)</span> is <em>not</em> automatically a clearance referenced to plasma concentration.</p>
+</section>
+<section id="a-result-before-simulating" class="level2">
+<h2 class="anchored" data-anchor-id="a-result-before-simulating">A result before simulating</h2>
+<p>For a complete concentration-time profile, integrate the <em>amount</em> balances from time zero to infinity. Let <span class="math inline">\(AUC_1=\int_0^\infty C_1(t)dt\)</span> and <span class="math inline">\(AUC_2=\int_0^\infty C_2(t)dt\)</span>. Because the peripheral compartment starts empty and eventually returns to zero amount, its net change in amount is zero:</p>
+<p><span class="math display">\[
+\underbrace{0}_{A_2(\infty)-A_2(0)} =
+\underbrace{Q AUC_1}_{\text{distribution into peripheral}}
+- \underbrace{Q AUC_2}_{\text{distribution back to central}}
+- \underbrace{CL_p AUC_2}_{\text{peripheral elimination}}.
+\]</span></p>
+<p>Rearranging gives</p>
+<p><span class="math display">\[
+Q(AUC_1-AUC_2)=CL_p AUC_2.
+\]</span></p>
+<p>In words: over the whole profile, the <strong>net</strong> amount distributed into the peripheral compartment must be exactly the amount eliminated there.</p>
+<p>The central compartment starts with the IV dose and also ends at zero. Integrating its amount balance makes the dose term explicit:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\underbrace{A_1(\infty)-A_1(0)}_{0-\mathrm{Dose}}
+&amp;= \int_0^\infty \frac{dA_1}{dt}\,dt \\
+&amp;= -CL_c AUC_1 - Q(AUC_1-AUC_2).
+\end{aligned}
+\]</span></p>
+<p>Multiplying both sides by <span class="math inline">\(-1\)</span> gives</p>
+<p><span class="math display">\[
+\mathrm{Dose}=CL_c AUC_1 + Q(AUC_1-AUC_2).
+\]</span></p>
+<p>Substituting the peripheral balance into that equation gives the equivalent whole-body statement: every unit of dose was ultimately eliminated either from central or peripheral,</p>
+<p><span class="math display">\[
+\mathrm{Dose}=CL_c AUC_1+CL_p AUC_2.
+\]</span></p>
+<p>Finally, solve the peripheral balance first:</p>
+<p><span class="math display">\[
+AUC_2 = \frac{Q}{Q+CL_p}AUC_1.
+\]</span></p>
+<p>Substitute this into the whole-body balance and solve for the plasma (central) AUC:</p>
+<p><span class="math display">\[
+\boxed{AUC_1 =
+\frac{\mathrm{Dose}}
+{CL_c+\frac{QCL_p}{Q+CL_p}}}.
+\]</span></p>
+<p>Thus, the apparent clearance inferred from plasma AUC is</p>
+<p><span class="math display">\[
+CL_{\mathrm{app,plasma}} = CL_c+\frac{QCL_p}{Q+CL_p}.
+\]</span></p>
+<p>Peripheral elimination only contributes <span class="math inline">\(QCL_p/(Q+CL_p)\)</span> to plasma apparent clearance. It is limited by distribution to the peripheral compartment.</p>
+<p>For example, if <span class="math inline">\(Q=5\)</span> and <span class="math inline">\(CL_p=10\)</span>, then <span class="math inline">\(AUC_2=(5/(5+10))AUC_1=AUC_1/3\)</span>. If there is no central elimination and the dose is 100, peripheral elimination requires <span class="math inline">\(10\times AUC_2=100\)</span>; hence <span class="math inline">\(AUC_2=10\)</span> and <span class="math inline">\(AUC_1=30\)</span>. The larger central AUC reflects the extra time needed for drug to reach the peripheral elimination site.</p>
+</section>
+<section id="simulate-the-three-cases-with-mrgsolve" class="level2">
+<h2 class="anchored" data-anchor-id="simulate-the-three-cases-with-mrgsolve">Simulate the three cases with <code>mrgsolve</code></h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mrgsolve)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>code <span class="ot">&lt;-</span> <span class="st">'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">$PARAM V1 = 10, V2 = 20, Q = 5, CLc = 0, CLp = 0</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">$CMT CENT PERI</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">$ODE</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">dxdt_CENT = -(CLc/V1 + Q/V1)*CENT + (Q/V2)*PERI;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">dxdt_PERI =  (Q/V1)*CENT - (Q/V2 + CLp/V2)*PERI;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">$TABLE</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">double CP = CENT/V1;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">$CAPTURE CP</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">'</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">mcode</span>(<span class="st">"peripheral_clearance"</span>, code)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>dose <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># A fine grid and a long horizon make trapezoidal AUC essentially complete.</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>sim_one <span class="ot">&lt;-</span> <span class="cf">function</span>(CLc, CLp, <span class="at">Q =</span> <span class="dv">5</span>, <span class="at">end =</span> <span class="dv">120</span>, <span class="at">delta =</span> <span class="fl">0.01</span>) {</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">mrgsim</span>(</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    mod,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">events =</span> <span class="fu">ev</span>(<span class="at">amt =</span> dose, <span class="at">cmt =</span> <span class="dv">1</span>),</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">end =</span> end,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">delta =</span> delta,</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">recsort =</span> <span class="dv">3</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">param =</span> <span class="fu">list</span>(<span class="at">CLc =</span> CLc, <span class="at">CLp =</span> CLp, <span class="at">Q =</span> Q)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(out)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  auc <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">diff</span>(out<span class="sc">$</span>time) <span class="sc">*</span> (<span class="fu">head</span>(out<span class="sc">$</span>CP, <span class="sc">-</span><span class="dv">1</span>) <span class="sc">+</span> <span class="fu">tail</span>(out<span class="sc">$</span>CP, <span class="sc">-</span><span class="dv">1</span>)) <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">time =</span> out<span class="sc">$</span>time, <span class="at">CP =</span> out<span class="sc">$</span>CP, <span class="at">AUC_numeric =</span> auc)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>scenarios <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="at">scenario =</span> <span class="fu">c</span>(<span class="st">"Central elimination only"</span>, <span class="st">"Peripheral elimination only"</span>, <span class="st">"Elimination from both"</span>),</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="at">CLc =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">5</span>),</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="at">CLp =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">10</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>simulations <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">seq_len</span>(<span class="fu">nrow</span>(scenarios)), <span class="cf">function</span>(i) {</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">sim_one</span>(scenarios<span class="sc">$</span>CLc[i], scenarios<span class="sc">$</span>CLp[i])</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  x<span class="sc">$</span>scenario <span class="ot">&lt;-</span> scenarios<span class="sc">$</span>scenario[i]</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  x</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(simulations) <span class="ot">&lt;-</span> scenarios<span class="sc">$</span>scenario</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> scenarios</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>results<span class="sc">$</span>CL_app_plasma <span class="ot">&lt;-</span> <span class="fu">with</span>(results, CLc <span class="sc">+</span> Q <span class="sc">*</span> CLp <span class="sc">/</span> (Q <span class="sc">+</span> CLp))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>results<span class="sc">$</span>AUC_analytic <span class="ot">&lt;-</span> dose <span class="sc">/</span> results<span class="sc">$</span>CL_app_plasma</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>results<span class="sc">$</span>AUC_numeric <span class="ot">&lt;-</span> <span class="fu">vapply</span>(simulations, <span class="cf">function</span>(x) x<span class="sc">$</span>AUC_numeric[<span class="dv">1</span>], <span class="fu">numeric</span>(<span class="dv">1</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>results<span class="sc">$</span>relative_error_pct <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">*</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  (results<span class="sc">$</span>AUC_numeric <span class="sc">-</span> results<span class="sc">$</span>AUC_analytic) <span class="sc">/</span> results<span class="sc">$</span>AUC_analytic</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transform</span>(</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    results,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">AUC_analytic =</span> <span class="fu">round</span>(AUC_analytic, <span class="dv">3</span>),</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">AUC_numeric =</span> <span class="fu">round</span>(AUC_numeric, <span class="dv">3</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">relative_error_pct =</span> <span class="fu">round</span>(relative_error_pct, <span class="dv">3</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">col.names =</span> <span class="fu">c</span>(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Scenario"</span>, <span class="st">"CL central"</span>, <span class="st">"CL peripheral"</span>, <span class="st">"Apparent plasma CL"</span>,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Analytic AUC"</span>, <span class="st">"Simulated AUC"</span>, <span class="st">"Relative error (%)"</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">"Analytic and simulated central AUC after a 100-unit IV bolus."</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Analytic and simulated central AUC after a 100-unit IV bolus.</caption>
+<colgroup>
+<col style="width: 23%">
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: right;">CL central</th>
+<th style="text-align: right;">CL peripheral</th>
+<th style="text-align: right;">Apparent plasma CL</th>
+<th style="text-align: right;">Analytic AUC</th>
+<th style="text-align: right;">Simulated AUC</th>
+<th style="text-align: right;">Relative error (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Central elimination only</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10.000000</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Peripheral elimination only</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3.333333</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Elimination from both</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">8.333333</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Central elimination only"</span> <span class="ot">=</span> <span class="st">"#0072B2"</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Peripheral elimination only"</span> <span class="ot">=</span> <span class="st">"#D55E00"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>          <span class="st">"Elimination from both"</span> <span class="ot">=</span> <span class="st">"#009E73"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>old_par <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">no.readonly =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">1</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="fl">4.2</span>, <span class="fl">4.8</span>, <span class="fl">2.8</span>, <span class="fl">1.2</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NA</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">24</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, dose <span class="sc">/</span> <span class="dv">10</span>),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Time"</span>, <span class="at">ylab =</span> <span class="fu">expression</span>(<span class="st">"Central concentration, "</span> <span class="sc">*</span> C[<span class="dv">1</span>]),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Linear scale"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (name <span class="cf">in</span> <span class="fu">names</span>(simulations)) {</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> simulations[[name]]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lines</span>(x<span class="sc">$</span>time, x<span class="sc">$</span>CP, <span class="at">col =</span> cols[name], <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="at">legend =</span> <span class="fu">names</span>(cols), <span class="at">col =</span> cols, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NA</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">24</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="fl">1e-4</span>, dose <span class="sc">/</span> <span class="dv">10</span>), <span class="at">log =</span> <span class="st">"y"</span>,</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Time"</span>, <span class="at">ylab =</span> <span class="fu">expression</span>(<span class="st">"Central concentration, "</span> <span class="sc">*</span> C[<span class="dv">1</span>]),</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Semi-log scale"</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (name <span class="cf">in</span> <span class="fu">names</span>(simulations)) {</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> simulations[[name]]</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lines</span>(x<span class="sc">$</span>time, <span class="fu">pmax</span>(x<span class="sc">$</span>CP, <span class="fl">1e-4</span>), <span class="at">col =</span> cols[name], <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" alt="Central concentration-time curves for the three clearance scenarios on linear and logarithmic concentration scales" width="960"></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(old_par)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The numerical AUCs agree with the analytic result up to the small error from finite simulation time and trapezoidal integration. The semi-log panel makes the terminal slopes easier to compare: moving the elimination site changes not only plasma AUC, but also the shape of the plasma concentration-time curve. The central-only case returns the usual <span class="math inline">\(100/10=10\)</span>. With peripheral-only elimination, however,</p>
+<p><span class="math display">\[
+AUC_1 = \frac{\mathrm{Dose}}{CL_p}\left(1+\frac{CL_p}{Q}\right).
+\]</span></p>
+<p>For this example, <span class="math inline">\(CL_p=10\)</span> and <span class="math inline">\(Q=5\)</span>, so central AUC is 30 rather than 10. The drug has to distribute to the peripheral compartment before it can be cleared.</p>
+</section>
+<section id="distribution-can-become-the-bottleneck" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-can-become-the-bottleneck">Distribution can become the bottleneck</h2>
+<p>Holding peripheral clearance at <span class="math inline">\(CL_p=10\)</span>, the next simulation changes <span class="math inline">\(Q\)</span>. The contribution of peripheral elimination to apparent plasma clearance cannot exceed <span class="math inline">\(Q\)</span>: when peripheral elimination is very fast, distribution becomes the rate-limiting step.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>q_grid <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">seq</span>(<span class="fu">log</span>(<span class="fl">0.05</span>), <span class="fu">log</span>(<span class="dv">200</span>), <span class="at">length.out =</span> <span class="dv">200</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>clp <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>cl_app <span class="ot">&lt;-</span> q_grid <span class="sc">*</span> clp <span class="sc">/</span> (q_grid <span class="sc">+</span> clp)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  q_grid, cl_app, <span class="at">log =</span> <span class="st">"x"</span>, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">"#D55E00"</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">expression</span>(<span class="st">"Intercompartmental clearance, "</span> <span class="sc">*</span> Q),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="fu">expression</span>(<span class="st">"Peripheral contribution to "</span> <span class="sc">*</span> CL[<span class="st">"app,plasma"</span>]),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="fu">expression</span>(<span class="st">"Peripheral clearance is filtered through "</span> <span class="sc">*</span> Q)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> clp, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">"grey40"</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="fl">0.07</span>, <span class="fl">9.4</span>, <span class="at">labels =</span> <span class="fu">expression</span>(CL[p] <span class="sc">==</span> <span class="dv">10</span>), <span class="at">pos =</span> <span class="dv">4</span>, <span class="at">col =</span> <span class="st">"grey30"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" alt="Apparent plasma clearance rises with intercompartmental clearance and approaches peripheral clearance" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="try-it-yourself-change-q" class="level2">
+<h2 class="anchored" data-anchor-id="try-it-yourself-change-q">Try it yourself: change <span class="math inline">\(Q\)</span></h2>
+<p>In this interactive sensitivity analysis, central clearance is held at <span class="math inline">\(CL_c=5\)</span> and peripheral clearance at <span class="math inline">\(CL_p=10\)</span>. Drag the slider to change <span class="math inline">\(Q\)</span>. The profile is solved in your browser from the same two-compartment equations used above; no software or data leave your device.</p>
+<div id="q-explorer" class="q-explorer">
+  <div class="q-explorer__controls">
+    <label for="q-slider"><strong>Intercompartmental clearance, Q</strong><br>
+      <input id="q-slider" type="range" min="-2" max="2.3" value="0.699" step="0.01" aria-describedby="q-help">
+    </label>
+    <p id="q-help" class="q-explorer__hint">The slider is logarithmic so that both very low and very high Q values are visible.</p>
+    <p class="q-explorer__value">Q = <output id="q-value" for="q-slider">5.00</output></p>
+    <label class="q-explorer__toggle"><input id="log-scale-toggle" type="checkbox"> Log-scale concentration axis</label>
+  </div>
+  <div class="q-explorer__metrics" aria-live="polite">
+    <div><span>Apparent plasma clearance</span><strong id="cl-app-value"></strong></div>
+    <div><span>Central AUC<sub>0–∞</sub></span><strong id="auc-value"></strong></div>
+    <div><span>Peripheral contribution</span><strong id="clp-contribution"></strong></div>
+  </div>
+  <div class="q-explorer__chart">
+    <canvas id="q-profile-canvas" role="img" aria-label="Central concentration-time profile after a 100-unit IV bolus"></canvas>
+  </div>
+  <p class="q-explorer__caption">Fixed values: dose = 100, V<sub>1</sub> = 10, V<sub>2</sub> = 20, CL<sub>c</sub> = 5, and CL<sub>p</sub> = 10. Units are intentionally generic.</p>
+</div>
+
+<style>
+.q-explorer { margin: 1.5rem 0; padding: 1.25rem; border: 1px solid #d8dee4; border-radius: .5rem; background: #f8fafc; }
+.q-explorer__controls { max-width: 42rem; }
+.q-explorer input { width: min(100%, 34rem); margin-top: .5rem; accent-color: #0072B2; }
+.q-explorer__hint, .q-explorer__caption { color: #58636f; font-size: .9rem; }
+.q-explorer__value { font-size: 1.15rem; margin: .75rem 0 0; }
+.q-explorer__toggle { display: inline-flex; align-items: center; gap: .4rem; margin-top: .65rem; cursor: pointer; }
+.q-explorer__toggle input { width: auto; margin: 0; }
+.q-explorer__metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1rem 0; }
+.q-explorer__metrics div { padding: .8rem; border-radius: .35rem; background: white; border: 1px solid #e4e8ec; }
+.q-explorer__metrics span, .q-explorer__metrics strong { display: block; }
+.q-explorer__metrics span { color: #58636f; font-size: .84rem; }
+.q-explorer__metrics strong { font-size: 1.15rem; margin-top: .2rem; }
+.q-explorer__chart { height: 320px; background: white; border: 1px solid #e4e8ec; }
+.q-explorer__chart canvas { width: 100%; height: 100%; }
+@media (max-width: 600px) { .q-explorer__metrics { grid-template-columns: 1fr; } .q-explorer__chart { height: 260px; } }
+</style>
+
+<script>
+(() => {
+  const root = document.getElementById("q-explorer");
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = "true";
+
+  const slider = root.querySelector("#q-slider");
+  const logScaleToggle = root.querySelector("#log-scale-toggle");
+  const qValue = root.querySelector("#q-value");
+  const clAppValue = root.querySelector("#cl-app-value");
+  const aucValue = root.querySelector("#auc-value");
+  const contributionValue = root.querySelector("#clp-contribution");
+  const canvas = root.querySelector("#q-profile-canvas");
+  const context = canvas.getContext("2d");
+  const dose = 100, V1 = 10, V2 = 20, CLc = 5, CLp = 10;
+
+  function derivatives(a1, a2, Q) {
+    return [-(CLc / V1 + Q / V1) * a1 + (Q / V2) * a2,
+      (Q / V1) * a1 - (Q / V2 + CLp / V2) * a2];
+  }
+
+  function profile(Q) {
+    const dt = 0.02, end = 24, values = [];
+    let a1 = dose, a2 = 0;
+    for (let t = 0; t <= end; t += dt) {
+      values.push([t, a1 / V1]);
+      const k1 = derivatives(a1, a2, Q);
+      const k2 = derivatives(a1 + dt * k1[0] / 2, a2 + dt * k1[1] / 2, Q);
+      const k3 = derivatives(a1 + dt * k2[0] / 2, a2 + dt * k2[1] / 2, Q);
+      const k4 = derivatives(a1 + dt * k3[0], a2 + dt * k3[1], Q);
+      a1 += dt * (k1[0] + 2 * k2[0] + 2 * k3[0] + k4[0]) / 6;
+      a2 += dt * (k1[1] + 2 * k2[1] + 2 * k3[1] + k4[1]) / 6;
+    }
+    return values;
+  }
+
+  function draw(values, logScale) {
+    const dpr = window.devicePixelRatio || 1;
+    const width = canvas.clientWidth, height = canvas.clientHeight;
+    canvas.width = width * dpr; canvas.height = height * dpr;
+    context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const left = 56, right = 18, top = 20, bottom = 42;
+    const plotW = width - left - right, plotH = height - top - bottom;
+    const maxY = Math.max(1, ...values.map(d => d[1])) * 1.12;
+    const minY = 0.001;
+    const logMin = Math.log10(minY), logMax = Math.log10(maxY);
+    const yPosition = y => logScale
+      ? height - bottom - ((Math.log10(Math.max(y, minY)) - logMin) / (logMax - logMin)) * plotH
+      : height - bottom - (y / maxY) * plotH;
+    context.clearRect(0, 0, width, height);
+    context.strokeStyle = "#cbd5df"; context.lineWidth = 1;
+    context.beginPath(); context.moveTo(left, top); context.lineTo(left, height - bottom); context.lineTo(width - right, height - bottom); context.stroke();
+    context.fillStyle = "#43515e"; context.font = "12px sans-serif";
+    const ticks = logScale
+      ? Array.from({length: Math.floor(logMax) - Math.ceil(logMin) + 1}, (_, i) => 10 ** (Math.ceil(logMin) + i))
+      : [0, maxY / 2, maxY];
+    ticks.forEach(y => {
+      const py = yPosition(y);
+      context.strokeStyle = "#e7edf2"; context.beginPath(); context.moveTo(left, py); context.lineTo(width - right, py); context.stroke();
+      context.fillText(logScale ? y.toExponential(0) : y.toFixed(1), 5, py + 4);
+    });
+    [0, 6, 12, 18, 24].forEach(t => {
+      const px = left + (t / 24) * plotW;
+      context.fillText(t, px - 4, height - bottom + 18);
+    });
+    context.fillText("Time", width / 2 - 12, height - 8);
+    context.save(); context.translate(14, height / 2 + 35); context.rotate(-Math.PI / 2); context.fillText("Central concentration", 0, 0); context.restore();
+    context.strokeStyle = "#0072B2"; context.lineWidth = 2.5; context.beginPath();
+    values.forEach(([t, c], i) => {
+      const px = left + (t / 24) * plotW;
+      const py = yPosition(c);
+      i ? context.lineTo(px, py) : context.moveTo(px, py);
+    });
+    context.stroke();
+  }
+
+  function update() {
+    const Q = 10 ** Number(slider.value);
+    const peripheralContribution = Q * CLp / (Q + CLp);
+    const clApp = CLc + peripheralContribution;
+    qValue.textContent = Q.toFixed(Q < 0.1 ? 3 : 2);
+    clAppValue.textContent = clApp.toFixed(2);
+    aucValue.textContent = (dose / clApp).toFixed(2);
+    contributionValue.textContent = peripheralContribution.toFixed(2);
+    draw(profile(Q), logScaleToggle.checked);
+  }
+  slider.addEventListener("input", update);
+  logScaleToggle.addEventListener("change", update);
+  window.addEventListener("resize", update);
+  update();
+})();
+</script>
+</section>
+<section id="take-home-messages" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-messages">Take-home messages</h2>
+<ul>
+<li>The IV identity <span class="math inline">\(AUC=\mathrm{Dose}/CL\)</span> remains correct only after defining which concentration the clearance is referenced to.</li>
+<li>If clearance is driven by peripheral concentration, plasma AUC is governed by <span class="math inline">\(QCL_p/(Q+CL_p)\)</span>, not simply by <span class="math inline">\(CL_p\)</span>.</li>
+<li>With clearance from both compartments, plasma apparent clearance is <span class="math inline">\(CL_c+QCL_p/(Q+CL_p)\)</span>.</li>
+<li>Calling the sum <span class="math inline">\(CL_c+CL_p\)</span> “total clearance” can be misleading when the terms are referenced to different compartment concentrations.</li>
+</ul>
+<p>These results assume linear, time-invariant kinetics, an IV dose into the central compartment, and AUC extrapolated to infinity. Real models may include nonlinear elimination, additional compartments, tissue-specific binding, or more physiologic blood-flow structure; the same principle still applies: always state the concentration that defines a clearance parameter.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
