@@ -1,0 +1,149 @@
+---
+title: "Zengtao Wang"
+subtitle: "PHARMACOMETRICS  |  QUANTITATIVE CLINICAL PHARMACOLOGY"
+format:
+  docx:
+    reference-doc: Zengtao_Wang_CV_reference.docx
+    toc: false
+  html:
+    css: Zengtao_Wang_CV.css
+    toc: false
+    embed-resources: true
+  pdf:
+    pdf-engine: typst
+    papersize: us-letter
+    margin: { x: "0.58in", y: "0.50in" }
+    fontsize: 9pt
+    mainfont: Arial
+    fontcolor: "#23313d"
+    linkcolor: "#167c80"
+    include-in-header: Zengtao_Wang_CV_typst.typ
+    toc: false
+lang: en-US
+---
+
+Indianapolis, Indiana  |  651-424-6529  |  [zengtao.wang@lilly.com](mailto:zengtao.wang@lilly.com)  |  [LinkedIn](https://www.linkedin.com/in/zengtao-wang)  |  [Google Scholar](https://scholar.google.com/citations?hl=en&user=4mJXDH4AAAAJ)  |  [GitHub](https://github.com/zengtaowang)  |  [Personal website](https://zengtaowang.github.io)
+
+## PROFESSIONAL PROFILE
+
+Pharmacometrics and quantitative pharmacology scientist applying population PK/PD, model-based meta-analysis, mechanistic modeling, and simulation to clinical development and trial design across neuroscience and diabetes. At Eli Lilly, works on clinical pharmacology and pharmacometrics studies, workflow automation, and emerging AI-augmented workflows. Doctoral research examined the pharmacokinetics and pharmacodynamics of amyloid beta peptides and insulin in Alzheimer's disease, with a focus on blood-brain barrier biology and translational pharmacology.
+
+## PROFESSIONAL EXPERIENCE
+
+**Eli Lilly and Company | Sr. Advisor - Pharmacometrician**  
+*Indianapolis, IN  |  September 2026-Present  |  Supervisor: Nieves Velez de Mendizabal, PhD*
+
+- Lead pharmacometrics support for clinical development in neuroscience and diabetes, informing study design and regulatory decisions.
+- Build automation tools to streamline pharmacometrics workflows and explore AI-augmented approaches.
+
+**Eli Lilly and Company | Advisor - Pharmacometrician**  
+*Indianapolis, IN  |  June 2024-August 2026  |  Supervisor: Nieves Velez de Mendizabal, PhD*
+
+- Supported clinical pharmacology studies with quantitative modeling, simulation, and regulatory analyses.
+
+**Biogen Inc. | Modeling and Simulation Co-op**  
+*Clinical Pharmacology and Pharmacometrics, Cambridge, MA  |  January-June 2023  |  Supervisor: Jingxian (JC) Chen, PhD*
+
+- Built a model-based meta-analysis of MDS-UPDRS outcomes in early Parkinson's disease using aggregated clinical data; developed disease-progression and time-to-event models in NONMEM and Monolix, then simulated endpoint trajectories to inform trial design.
+- Developed a population PK/PD model for a Parkinson's disease antisense oligonucleotide and simulated alternative dosing regimens to support dose optimization.
+- Presented model assumptions, findings, and applications to internal stakeholders; presented the MBMA work at ACoP14.
+
+## EDUCATION
+
+**PhD, Pharmaceutics | University of Minnesota Twin Cities**  
+*Minneapolis, MN  |  September 2019-May 2024  |  GPA: 4.00/4.00*
+
+- Dissertation: Anomalous Aβ exposure and blood-brain barrier insulin resistance induce cerebrovascular dysfunction in Alzheimer's disease.
+
+**BS, Pharmacy | Shanghai Jiao Tong University**  
+*Shanghai, China  |  September 2015-June 2019  |  GPA: 3.88/4.00*
+
+- Undergraduate thesis: Design, synthesis and biological evaluation of molecular imaging probe targeting cytochrome P450 1B1.
+
+## RESEARCH EXPERIENCE
+
+**Blood-brain barrier and Alzheimer's disease research | Graduate Research Assistant**  
+*Department of Pharmaceutics, University of Minnesota Twin Cities  |  November 2019-May 2024  |  Advisor: Karunya K. Kandimalla, PhD*
+
+- Developed population PK and mechanistic models to investigate trafficking and accumulation of amyloid-beta isoforms at the blood-brain barrier endothelium; published in Molecular Pharmaceutics.
+- Combined flow cytometry, western blotting, and cellular imaging to study amyloid-beta uptake and intracellular trafficking; published in Molecular Pharmacology.
+- Established a compartmental PK model to estimate plasma pharmacokinetics of macromolecular tracers from dynamic SPECT/CT heart imaging.
+- Analyzed dynamic SPECT/CT and intracellular trafficking data to evaluate the effects of an HDL mimetic peptide and a gut microbiome metabolite on endothelial amyloid-beta accumulation.
+- Interpreted time-series transcriptomic data after insulin exposure and developed a quantitative systems pharmacology model linking insulin signaling, VCAM1 expression, and cerebrovascular inflammation.
+
+**CYP1B1 molecular imaging probes | Undergraduate Research Assistant**  
+*School of Pharmacy, Shanghai Jiao Tong University  |  October 2016-June 2019  |  Advisor: Qingqing Meng, PhD*
+
+- Synthesized and characterized near-infrared and NIR-PET bimodal probes targeting CYP1B1.
+- Evaluated probe binding and selectivity in CYP1B1-overexpressing cancer cells using flow cytometry and confocal microscopy; assessed tumor visualization and biodistribution in vivo.
+
+**Anti-amyloid antibody delivery across the blood-brain barrier | Summer Research Intern**  
+*University of Tokyo / Innovation Center of Nanomedicine, Kawasaki, Japan  |  Summer 2018  |  Supervisor: Kazunori Kataoka, PhD*
+
+- Prepared and characterized PEGylated antibodies using gel permeation chromatography and dynamic light scattering; investigated pharmacokinetics and brain accumulation.
+
+## TECHNICAL SKILLS
+
+**Modeling:** Population PK/PD, nonlinear mixed-effects modeling, model-based meta-analysis, time-to-event modeling, quantitative systems pharmacology, clinical trial simulation  
+**Automation and AI:** Pharmacometric workflow automation; interest in AI-augmented workflows  
+**Software:** NONMEM, Monolix, MATLAB/SimBiology, R, mrgsolve, Phoenix WinNonlin, SAAM II, Stella Architect  
+**Laboratory:** Cell culture, permeability assays, ELISA, flow cytometry, confocal microscopy, western blotting, HPLC, chemical synthesis
+
+## SELECTED HONORS AND AWARDS
+
+- **Emerson Award** - Eli Lilly and Company, ATPLV-HSE organization
+- **Lilly Innovator Award** - Eli Lilly and Company, 2024
+- **Doctoral Dissertation Fellowship** - University of Minnesota, 2023
+- **Bighley Graduate Fellowship** - University of Minnesota College of Pharmacy, 2023
+- **Highlighted Trainee Author** - Molecular Pharmacology, 2023
+- **Highlighted Trainee Author** - The Journal of Pharmacology and Experimental Therapeutics, 2023
+- **Research Award** - American Association of Indian Pharmaceutical Scientists, 2023
+- **Ronald J. Sawchuk Fellowship in Pharmacokinetics** - University of Minnesota College of Pharmacy, 2022
+- **GPEN 2022 sponsored participant** - Selected by faculty; sponsored by Upsher-Smith, 2022
+- **UMII-MnDRIVE PhD Graduate Assistantship Award** - University of Minnesota Informatics Institute, 2021
+- **Runner-up, Three-Minute Thesis** - University of Minnesota College of Pharmacy, 2021
+- **Edward G. Rippie Fellowship in Pharmaceutics** - University of Minnesota College of Pharmacy, 2021
+- **Certificate of Excellent Bachelor Thesis (top 1%)** - Shanghai Jiao Tong University, 2019
+- **China National Scholarship** - Ministry of Education of China, 2018
+- **Shanghai Municipal Government Scholarship** - Shanghai Municipal People's Government, 2017
+
+## PEER-REVIEWED PUBLICATIONS
+
+- Wang Z, Veerareddy V, Eberts PM, Azarin SM, Kandimalla KK. [Endothelial-pericyte interactions activate insulin signaling and its implications for blood-brain barrier dysfunction in Alzheimer's disease](https://doi.org/10.1186/s12987-026-00884-5). *Fluids Barriers CNS.* 2026.
+- Salian V, Wang Z, Curran GL, Podulso JF, Kandimalla KK. [Estimation of various physiological parameters affecting amyloid plaque distribution of a novel MRI contrast agent in the brain of Alzheimer's disease transgenic mice](https://doi.org/10.1021/acs.molpharmaceut.5c01565). *Mol Pharm.* 2026;23(6):3243-3253.
+- Wang Z, Veerareddy V, Tang X, Thompson KJ, Krishnan S, Kalari KR, Kandimalla KK. [QSP modeling shows pathological synergism between insulin resistance and amyloid-beta exposure in upregulating VCAM1 expression at the BBB endothelium](https://doi.org/10.1002/psp4.13296). *CPT Pharmacometrics Syst Pharmacol.* 2025;14(3):561-571.
+- Wang Z, Zhong R, Curran GL, Min P, Lowe VJ, Li L, Kandimalla KK. [High-density lipoprotein mimetic peptide 4F reduces toxic amyloid-beta exposure to the blood-brain barrier endothelium in Alzheimer's disease transgenic mice](https://doi.org/10.1021/acs.molpharmaceut.4c00633). *Mol Pharm.* 2024;21(11):5661-5671.
+- Nelson D, Thompson KJ, Wang L, Wang Z, Eberts P, Azarin SM, Kalari KR, Kandimalla KK. [Pericyte control of gene expression in the blood-brain barrier endothelium: implications for Alzheimer's disease](https://pubmed.ncbi.nlm.nih.gov/38393902/). *J Alzheimers Dis.* 2024;99(s2):S281-S297.
+- Wang Z, Sharda N, Omtri RS, Li L, Kandimalla KK. [Amyloid-beta proteins 40 and 42 employ distinct molecular pathways for cell entry and intracellular transit at the BBB endothelium](https://molpharm.aspetjournals.org/content/104/5/203.long). *Mol Pharmacol.* 2023;104(5):203-213.
+- Wang Z, Wang L, Ebbini M, Curran GL, Vernon CJ, Min HK, Siegel RA, Lowe VJ, Kandimalla KK. [Deconvolution of plasma pharmacokinetics from dynamic heart imaging data obtained by SPECT/CT imaging](https://jpet.aspetjournals.org/content/386/1/102.long). *J Pharmacol Exp Ther.* 2023;386(1):102-110.
+- Wang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. [Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium using time-series transcriptomics data](https://doi.org/10.1038/s41540-022-00235-8). *NPJ Syst Biol Appl.* 2022;8(1):29.
+- Wang Z, Chen D, Fan Q, Wu Z, Dong J, Cui J, Wang J, Xu T, Meng Q, Li S. [Design, synthesis and in vivo fluorescence imaging study of a cytochrome P450 1B1 targeted NIR probe containing a chelator moiety](https://doi.org/10.1002/cbic.202200268). *ChemBioChem.* 2022:e202200268.
+- Taubel JC, Nelson NR, Bansal A, Curran GL, Wang L, Wang Z, Berg HM, Vernon CJ, Min HK, Larson NB, DeGrado TR, Kandimalla KK, Lowe VJ, Pandey MK. [Design, synthesis, and preliminary evaluation of [68Ga]Ga-NOTA-insulin as a PET probe in an Alzheimer's disease mouse model](https://doi.org/10.1021/acs.bioconjchem.2c00126). *Bioconjug Chem.* 2022;33(5):892-906.
+- Chen D, Fan Q, Xu T, Dong J, Cui J, Wang Z, Wang J, Meng Q, Li S. [Design, synthesis and binding affinity evaluation of cytochrome P450 1B1 targeted chelators](https://www.eurekaselect.com/article/115172). *Anticancer Agents Med Chem.* 2022;22(2):261-269.
+- Wang Z, Sharda N, Curran GL, Li L, Lowe VJ, Kandimalla KK. [Semimechanistic population pharmacokinetic modeling to investigate amyloid beta trafficking and accumulation at the BBB endothelium](https://doi.org/10.1021/acs.molpharmaceut.1c00549). *Mol Pharm.* 2021;18(11):4148-4161.
+- Sharda N, Pengo T, Wang Z, Kandimalla KK. [Amyloid-beta peptides disrupt interactions between VAMP-2 and SNAP-25 in neuronal cells as determined by FRET/FLIM](https://doi.org/10.3233/JAD-200065). *J Alzheimers Dis.* 2020;77(1):423-435.
+- Xie J, Gonzalez-Carter D, Tockary TA, Nakamura N, Xue Y, Nakakido M, Akiba H, Dirisala A, Liu X, Toh K, Yang T, Wang Z, et al. [Dual-sensitive nanomicelles enhancing systemic delivery of therapeutically active antibodies specifically into the brain](https://doi.org/10.1021/acsnano.9b09991). *ACS Nano.* 2020;14(6):6729-6742.
+- Dong J, Wang Z, Cui J, Meng Q, Li S. [Synthesis and structure-activity relationship studies of alpha-naphthoflavone derivatives as CYP1B1 inhibitors](https://doi.org/10.1016/j.ejmech.2019.111938). *Eur J Med Chem.* 2020;187:111938.
+- Wang Z, Meng Q, Li S. [The role of NIR fluorescence in MDR cancer treatment: from targeted imaging to phototherapy](https://doi.org/10.2174/0929867326666190627123719). *Curr Med Chem.* 2020;27(33):5510-5529.
+- Dong J, Huang G, Zhang Q, Wang Z, Cui J, Wu Y, Meng Q, Li S. [Development of benzochalcone derivatives as selective CYP1B1 inhibitors and anticancer agents](https://pubs.rsc.org/en/content/articlelanding/2019/md/c9md00258h). *MedChemComm.* 2019;10(9):1606-1614.
+- Meng Q, Wang Z, Cui J, Cui Q, Dong J, Zhang Q, Li S. [Design, synthesis, and biological evaluation of cytochrome P450 1B1 targeted molecular imaging probes for colorectal tumor detection](https://doi.org/10.1021/acs.jmedchem.8b01633). *J Med Chem.* 2018;61(23):10901-10909.
+- Dong J, Zhang Q, Meng Q, Wang Z, Li S, Cui J. [Development of 2-arylbenzo[h]quinolone analogs as selective CYP1B1 inhibitors](https://doi.org/10.1039/C8RA00465J). *RSC Adv.* 2018;8(27):15009-15020.
+- Dong J, Zhang Q, Wang Z, Huang G, Li S. [Recent advances in the development of indazole-based anticancer agents](https://doi.org/10.1002/cmdc.201800253). *ChemMedChem.* 2018;13(15):1490-1507.
+- Dong J, Zhang Q, Meng Q, Wang Z, Li S, Cui J. [The chemistry and biological effects of thioflavones](https://doi.org/10.2174/1389557518666180515145633). *Mini Rev Med Chem.* 2018;18(20):1714-1732.
+
+## CONFERENCE PRESENTATIONS
+
+- Wang Z, Heathman MA, Kim SJ, Miles S, Velez de Mendizabal N. [MN2mrg: An open-source R Shiny application for automated translation of Monolix and NONMEM models to mrgsolve for simulation workflows](https://acop2026.eventscribe.net/fsPopup.asp?PosterID=834217&efp=SkhTQlZDVkcyMjQ4NQ&mode=posterInfo). Software and tool demonstration (M-040), American Conference on Pharmacometrics (ACoP) 2026, October 12, 2026.
+- Wang Z, Veerareddy V (presenting author), Kandimalla KK. Gut microbial metabolites regulate bidirectional transport and accumulation of Alzheimer's disease amyloid-beta peptides at the blood-brain barrier endothelium. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Boston, MA, 2022.
+- Wang Z, Tang X, Thompson KJ, Kalari KR, Kandimalla KK. Systems biology modeling of the insulin signaling network in the blood-brain barrier endothelium predicts cerebrovascular inflammation in Alzheimer's disease. Special poster, American Association of Pharmaceutical Scientists Annual Meeting, Boston, MA, 2022.
+- Wang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium and impact of amyloid-beta exposure. Poster, Barriers of the CNS Gordon Research Conference, New London, NH, 2022.
+- Wang Z, Curran GL, Zhong R, Lowe VJ, Li L, Kandimalla KK. High-density lipoprotein mimetic peptide 4F reduces amyloid-beta peptide accumulation in the blood-brain barrier endothelium in Alzheimer's disease. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Orlando, FL, 2023.
+- Wang Z, Chen J, Yang M, Hirst WD, Dam T, Burton J. Model-based meta-analysis of MDS-UPDRS scores to improve clinical trial efficiency for Parkinson's disease. Poster, 14th American Conference on Pharmacometrics, National Harbor, MD, 2023.
+- Wang Z, Wang L, Curran GL, Vernon CJ, Min PH, Lowe VJ, Kandimalla KK. Prediction of plasma pharmacokinetics from dynamic heart imaging data. Special poster, American Association of Pharmaceutical Scientists Annual Meeting, Philadelphia, PA, 2021.
+- Wang Z, Tang X, Swaminathan SK, Kalari KR, Kandimalla KK. Mapping the dynamics of insulin-responsive pathways in the blood-brain barrier endothelium using time-series transcriptomics data. Poster, American Association of Pharmaceutical Scientists Annual Meeting, Philadelphia, PA, 2021.
+- Wang Z, Zhou AL, Sharda N, Curran GL, Lowe VJ, Kandimalla KK. Semi-mechanistic pharmacokinetic model to predict the impact of age and insulin exposure on Alzheimer's disease amyloid-beta peptide kinetics at the blood-brain barrier. Poster, American Association of Pharmaceutical Scientists Annual Meeting, virtual, 2020.
+- Wang Z, Tang X, Thompson KJ, Kalari KR, Kandimalla KK. Systems biology modeling of insulin signaling in the blood-brain barrier endothelium predicts cerebrovascular inflammation in Alzheimer's disease. Poster, GPEN, University of Minnesota, 2022.
+
+## ADDITIONAL TRAINING
+
+Monoclonal Antibody PK/PD Workshop, SUNY Buffalo (May 2022)  |  MonolixSuite Pharmacometrics Spring School, Lixoft (March 2022)
